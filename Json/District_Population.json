@@ -1,0 +1,1098 @@
+[
+  {
+    "District": "Abura-Asebu-Kwamankese",
+    "Capital": "Abora Dunkwa",
+    "Total_Population": 117185,
+    "Male": 55275,
+    "Female": 61910,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Accra",
+    "Capital": "Accra",
+    "Total_Population": 1665086,
+    "Male": 800935,
+    "Female": 864151,
+    "Region": "GREATER ACCRA"
+  },
+  {
+    "District": "Adaklu Anyigbe",
+    "Capital": "Adaklu Waya",
+    "Total_Population": 29948,
+    "Male": 14510,
+    "Female": 15438,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Adansi North",
+    "Capital": "Fomena",
+    "Total_Population": 107091,
+    "Male": 53055,
+    "Female": 54036,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Adansi South",
+    "Capital": "New Edubiase",
+    "Total_Population": 115378,
+    "Male": 58039,
+    "Female": 57339,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Afigya Sekyere",
+    "Capital": "Agona",
+    "Total_Population": 94009,
+    "Male": 44691,
+    "Female": 49318,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Afram Plains",
+    "Capital": "Kumawu",
+    "Total_Population": 65402,
+    "Male": 30981,
+    "Female": 34421,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Agona",
+    "Capital": "Nsaba",
+    "Total_Population": 85920,
+    "Male": 41035,
+    "Female": 44885,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Ahafo Ano North",
+    "Capital": "Tepa",
+    "Total_Population": 94285,
+    "Male": 47956,
+    "Female": 46329,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Ahafo Ano South",
+    "Capital": "Mankranso",
+    "Total_Population": 121659,
+    "Male": 61745,
+    "Female": 59914,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Ahanta West",
+    "Capital": "Agona",
+    "Total_Population": 106215,
+    "Male": 50999,
+    "Female": 55216,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "Ajumako-Enyan-Esiam",
+    "Capital": "Ajumako",
+    "Total_Population": 138046,
+    "Male": 64418,
+    "Female": 73628,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Akatsi",
+    "Capital": "Ave Dakpa",
+    "Total_Population": 33035,
+    "Male": 15126,
+    "Female": 17909,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Akwapim North",
+    "Capital": "Akropong",
+    "Total_Population": 136483,
+    "Male": 64028,
+    "Female": 72455,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Akwapim South",
+    "Capital": "Aburi",
+    "Total_Population": 37501,
+    "Male": 18174,
+    "Female": 19327,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Amansie Central",
+    "Capital": "Jacobu",
+    "Total_Population": 90741,
+    "Male": 45275,
+    "Female": 45466,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Amansie East",
+    "Capital": "Bekwai",
+    "Total_Population": 118024,
+    "Male": 55615,
+    "Female": 62409,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Amansie West",
+    "Capital": "Manso Nkwanta",
+    "Total_Population": 134331,
+    "Male": 67485,
+    "Female": 66846,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Aowin-Suaman",
+    "Capital": "Dadieso",
+    "Total_Population": 117886,
+    "Male": 61262,
+    "Female": 56624,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "Asante Akim North",
+    "Capital": "Agogo",
+    "Total_Population": 69186,
+    "Male": 33731,
+    "Female": 35455,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Asante Akim South",
+    "Capital": "Juaso",
+    "Total_Population": 117245,
+    "Male": 57951,
+    "Female": 59294,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Asikuma Odoben Brakwa",
+    "Capital": "Breman Asikuma",
+    "Total_Population": 112706,
+    "Male": 54293,
+    "Female": 58413,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Assin North",
+    "Capital": "Assin Fosu",
+    "Total_Population": 161341,
+    "Male": 80254,
+    "Female": 81087,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Assin South",
+    "Capital": "Nsuaem Kyekyewere",
+    "Total_Population": 104244,
+    "Male": 50936,
+    "Female": 53308,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Asunafo North",
+    "Capital": "Goaso",
+    "Total_Population": 124685,
+    "Male": 62854,
+    "Female": 61831,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Asunafo South",
+    "Capital": "Kukuom",
+    "Total_Population": 95580,
+    "Male": 48836,
+    "Female": 46744,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Asuogyaman",
+    "Capital": "Atimpoku",
+    "Total_Population": 98046,
+    "Male": 47030,
+    "Female": 51016,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Asutifi",
+    "Capital": "Kenyase",
+    "Total_Population": 52259,
+    "Male": 26761,
+    "Female": 25498,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Atebubu-Amantin",
+    "Capital": "Atebubu",
+    "Total_Population": 105938,
+    "Male": 53674,
+    "Female": 52264,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Atiwa",
+    "Capital": "Kwabeng",
+    "Total_Population": 110622,
+    "Male": 54671,
+    "Female": 55951,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Atwima",
+    "Capital": "Foase",
+    "Total_Population": 90634,
+    "Male": 43792,
+    "Female": 46842,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Atwima Mponua",
+    "Capital": "Nyinahin",
+    "Total_Population": 119180,
+    "Male": 61090,
+    "Female": 58090,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Awutu Efutu Senya",
+    "Capital": "Kasoa",
+    "Total_Population": 108422,
+    "Male": 52197,
+    "Female": 56225,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Bawku Municipal",
+    "Capital": "Bawku",
+    "Total_Population": 98096,
+    "Male": 47059,
+    "Female": 51037,
+    "Region": "UPPER EAST"
+  },
+  {
+    "District": "Bawku West",
+    "Capital": "Zebilla",
+    "Total_Population": 94034,
+    "Male": 45114,
+    "Female": 48920,
+    "Region": "UPPER EAST"
+  },
+  {
+    "District": "Berekum",
+    "Capital": "Berekum",
+    "Total_Population": 129628,
+    "Male": 59869,
+    "Female": 69759,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Bia",
+    "Capital": "Debiso",
+    "Total_Population": 27393,
+    "Male": 14373,
+    "Female": 13020,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "Bibiani Anhwiaso Bekwai",
+    "Capital": "Bekwai",
+    "Total_Population": 118024,
+    "Male": 55615,
+    "Female": 62409,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Birim North",
+    "Capital": "New Abirem",
+    "Total_Population": 78907,
+    "Male": 39572,
+    "Female": 39335,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Birim South",
+    "Capital": "Swedru",
+    "Total_Population": 119767,
+    "Male": 57981,
+    "Female": 61786,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Bole",
+    "Capital": "Bole",
+    "Total_Population": 61593,
+    "Male": 31022,
+    "Female": 30571,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Bolgatanga",
+    "Capital": "Bolgatanga",
+    "Total_Population": 131550,
+    "Male": 62783,
+    "Female": 68767,
+    "Region": "UPPER EAST"
+  },
+  {
+    "District": "Bongo",
+    "Capital": "Bongo",
+    "Total_Population": 84545,
+    "Male": 40084,
+    "Female": 44461,
+    "Region": "UPPER EAST"
+  },
+  {
+    "District": "Bosomtwe-Kwanwoma",
+    "Capital": "Kuntanase",
+    "Total_Population": 93910,
+    "Male": 44793,
+    "Female": 49117,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Builsa",
+    "Capital": "Sandema",
+    "Total_Population": 56477,
+    "Male": 27792,
+    "Female": 28685,
+    "Region": "UPPER EAST"
+  },
+  {
+    "District": "Bunkpurugu Yunyoo",
+    "Capital": "Bunkpurugu",
+    "Total_Population": 122591,
+    "Male": 60240,
+    "Female": 62351,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Cape Coast",
+    "Capital": "Cape Coast",
+    "Total_Population": 169894,
+    "Male": 82810,
+    "Female": 87084,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Central Gonja",
+    "Capital": "Buipe",
+    "Total_Population": 87877,
+    "Male": 43860,
+    "Female": 44017,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Dangbe East",
+    "Capital": "Ada Foah",
+    "Total_Population": 71671,
+    "Male": 34012,
+    "Female": 37659,
+    "Region": "GREATER ACCRA"
+  },
+  {
+    "District": "Dangbe West",
+    "Capital": "Sege",
+    "Total_Population": 59124,
+    "Male": 28579,
+    "Female": 30545,
+    "Region": "GREATER ACCRA"
+  },
+  {
+    "District": "Dormaa",
+    "Capital": "Wamfie",
+    "Total_Population": 50871,
+    "Male": 23970,
+    "Female": 26901,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "East Akim",
+    "Capital": "Kibi",
+    "Total_Population": 167896,
+    "Male": 81767,
+    "Female": 86129,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "East Gonja",
+    "Capital": "Salaga",
+    "Total_Population": 135450,
+    "Male": 69721,
+    "Female": 65729,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "East Mamprusi",
+    "Capital": "Gambaga",
+    "Total_Population": 121009,
+    "Male": 59453,
+    "Female": 61556,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Ejisu-Juabeng",
+    "Capital": "Ejisu",
+    "Total_Population": 143762,
+    "Male": 68648,
+    "Female": 75114,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Ejura Sekyedumase",
+    "Capital": "Ejura",
+    "Total_Population": 85446,
+    "Male": 42892,
+    "Female": 42554,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Fanteakwa",
+    "Capital": "Begoro",
+    "Total_Population": 108614,
+    "Male": 54010,
+    "Female": 54604,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Ga East",
+    "Capital": "Abokobi",
+    "Total_Population": 147742,
+    "Male": 72987,
+    "Female": 74755,
+    "Region": "GREATER ACCRA"
+  },
+  {
+    "District": "Ga West",
+    "Capital": "Amasaman",
+    "Total_Population": 219788,
+    "Male": 107742,
+    "Female": 112046,
+    "Region": "GREATER ACCRA"
+  },
+  {
+    "District": "Garu Tempane",
+    "Capital": "Garu",
+    "Total_Population": 130003,
+    "Male": 62025,
+    "Female": 67978,
+    "Region": "UPPER EAST"
+  },
+  {
+    "District": "Gomoa",
+    "Capital": "Afransie",
+    "Total_Population": 207071,
+    "Male": 98323,
+    "Female": 108748,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Gushiegu",
+    "Capital": "Gushiegu",
+    "Total_Population": 111259,
+    "Male": 54186,
+    "Female": 57073,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Ho",
+    "Capital": "Ho",
+    "Total_Population": 177281,
+    "Male": 83819,
+    "Female": 93462,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Hohoe",
+    "Capital": "Hohoe",
+    "Total_Population": 167016,
+    "Male": 79967,
+    "Female": 87049,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Jaman North",
+    "Capital": "Sampa",
+    "Total_Population": 83059,
+    "Male": 39889,
+    "Female": 43170,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Jaman South",
+    "Capital": "Japekrom",
+    "Total_Population": 92649,
+    "Male": 43459,
+    "Female": 49190,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Jasikan",
+    "Capital": "Jasikan",
+    "Total_Population": 59181,
+    "Male": 29142,
+    "Female": 30039,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Jirapa Lambussie",
+    "Capital": "Jirapa",
+    "Total_Population": 88402,
+    "Male": 41592,
+    "Female": 46810,
+    "Region": "UPPER WEST"
+  },
+  {
+    "District": "Jomoro",
+    "Capital": "Half Assini",
+    "Total_Population": 150107,
+    "Male": 73561,
+    "Female": 76546,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "Juabeso",
+    "Capital": "Juaboso",
+    "Total_Population": 58435,
+    "Male": 29742,
+    "Female": 28693,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "Kadjebi",
+    "Capital": "Kadjebi",
+    "Total_Population": 59303,
+    "Male": 29951,
+    "Female": 29352,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Karaga",
+    "Capital": "Karaga",
+    "Total_Population": 77706,
+    "Male": 37336,
+    "Female": 40370,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Kassena Nankana",
+    "Capital": "Navrongo",
+    "Total_Population": 109944,
+    "Male": 53676,
+    "Female": 56268,
+    "Region": "UPPER EAST"
+  },
+  {
+    "District": "Keta",
+    "Capital": "Keta",
+    "Total_Population": 147618,
+    "Male": 68556,
+    "Female": 79062,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Ketu",
+    "Capital": "Dzodze",
+    "Total_Population": 99913,
+    "Male": 46551,
+    "Female": 53362,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Kintampo North",
+    "Capital": "Kintampo",
+    "Total_Population": 95480,
+    "Male": 47302,
+    "Female": 48178,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Kintampo South",
+    "Capital": "Jema",
+    "Total_Population": 81000,
+    "Male": 42129,
+    "Female": 38871,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Komenda-Edina-Eguafo-Abirem",
+    "Capital": "Elmina",
+    "Total_Population": 144705,
+    "Male": 69665,
+    "Female": 75040,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Kpandu",
+    "Capital": "Kpando",
+    "Total_Population": 53736,
+    "Male": 25904,
+    "Female": 27832,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Krachi",
+    "Capital": "Chinderi",
+    "Total_Population": 72688,
+    "Male": 36649,
+    "Female": 36039,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Krachi East",
+    "Capital": "Dambai",
+    "Total_Population": 116804,
+    "Male": 60730,
+    "Female": 56074,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Kumasi",
+    "Capital": "Kumasi",
+    "Total_Population": 1730249,
+    "Male": 826479,
+    "Female": 903770,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Kwabibirem",
+    "Capital": "Kade",
+    "Total_Population": 113721,
+    "Male": 55746,
+    "Female": 57975,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Kwabre",
+    "Capital": "Mamponteng",
+    "Total_Population": 115556,
+    "Male": 55106,
+    "Female": 60450,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Kwahu South",
+    "Capital": "Atibie",
+    "Total_Population": 69757,
+    "Male": 33094,
+    "Female": 36663,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Kwahu West",
+    "Capital": "Nkawkaw",
+    "Total_Population": 93584,
+    "Male": 44875,
+    "Female": 48709,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Lawra",
+    "Capital": "Lawra",
+    "Total_Population": 54889,
+    "Male": 26346,
+    "Female": 28543,
+    "Region": "UPPER WEST"
+  },
+  {
+    "District": "Lower Denkyira",
+    "Capital": "Twifo Hemang",
+    "Total_Population": 55131,
+    "Male": 27370,
+    "Female": 27761,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Manya Krobo",
+    "Capital": "Odumase",
+    "Total_Population": 89246,
+    "Male": 41470,
+    "Female": 47776,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Mfantsiman",
+    "Capital": "Saltpound",
+    "Total_Population": 144332,
+    "Male": 64923,
+    "Female": 79409,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Mpohor Wassa East",
+    "Capital": "Mpohor",
+    "Total_Population": 42923,
+    "Male": 21486,
+    "Female": 21437,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "Nadowli",
+    "Capital": "Nadawli",
+    "Total_Population": 61561,
+    "Male": 28753,
+    "Female": 32808,
+    "Region": "UPPER WEST"
+  },
+  {
+    "District": "Nanumba North",
+    "Capital": "Bimbilia",
+    "Total_Population": 141584,
+    "Male": 69997,
+    "Female": 71587,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Nanumba South",
+    "Capital": "Wulensi",
+    "Total_Population": 93464,
+    "Male": 46776,
+    "Female": 46688,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "New Juaben",
+    "Capital": "Koforidua",
+    "Total_Population": 183727,
+    "Male": 88687,
+    "Female": 95040,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Nkoranza",
+    "Capital": "Busunya",
+    "Total_Population": 65895,
+    "Male": 33263,
+    "Female": 32632,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Nkwanta",
+    "Capital": "Kpasa",
+    "Total_Population": 64553,
+    "Male": 32394,
+    "Female": 32159,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "North Tongu",
+    "Capital": "Battor",
+    "Total_Population": 89777,
+    "Male": 42492,
+    "Female": 47285,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Nzema East",
+    "Capital": "Axim",
+    "Total_Population": 60828,
+    "Male": 29947,
+    "Female": 30881,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "Obuasi Municipal",
+    "Capital": "Obuasi",
+    "Total_Population": 168641,
+    "Male": 81015,
+    "Female": 87626,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Offinso",
+    "Capital": "Offinso",
+    "Total_Population": 76895,
+    "Male": 37068,
+    "Female": 39827,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Pru",
+    "Capital": "Yeji",
+    "Total_Population": 129248,
+    "Male": 65832,
+    "Female": 63416,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Saboba Chereponi",
+    "Capital": "Saboba",
+    "Total_Population": 65706,
+    "Male": 32320,
+    "Female": 33386,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Savelugu Nanton",
+    "Capital": "Savelugu",
+    "Total_Population": 139283,
+    "Male": 67531,
+    "Female": 71752,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Sawa-Tuna-Kalba",
+    "Capital": "Sawla",
+    "Total_Population": 99863,
+    "Male": 48269,
+    "Female": 51594,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Sefwi Wiawso",
+    "Capital": "Sefwi Wiawso",
+    "Total_Population": 139200,
+    "Male": 69753,
+    "Female": 69447,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "Sekyere East",
+    "Capital": "Nsuta",
+    "Total_Population": 71232,
+    "Male": 35225,
+    "Female": 36007,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Sekyere West",
+    "Capital": "Effiduase",
+    "Total_Population": 62172,
+    "Male": 29511,
+    "Female": 32661,
+    "Region": "ASHANTI"
+  },
+  {
+    "District": "Sene",
+    "Capital": "Kajaji",
+    "Total_Population": 61076,
+    "Male": 32211,
+    "Female": 28865,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Shama Ahanta East",
+    "Capital": "Shama",
+    "Total_Population": 81966,
+    "Male": 38704,
+    "Female": 43262,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "Sissala East",
+    "Capital": "Tumu",
+    "Total_Population": 56528,
+    "Male": 27503,
+    "Female": 29025,
+    "Region": "UPPER WEST"
+  },
+  {
+    "District": "Sissala West",
+    "Capital": "Gwollu",
+    "Total_Population": 49573,
+    "Male": 24151,
+    "Female": 25422,
+    "Region": "UPPER WEST"
+  },
+  {
+    "District": "South Dayi",
+    "Capital": "Kpeve",
+    "Total_Population": 46661,
+    "Male": 22132,
+    "Female": 24529,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "South Tongu",
+    "Capital": "Sogakope",
+    "Total_Population": 87950,
+    "Male": 40019,
+    "Female": 47931,
+    "Region": "VOLTA"
+  },
+  {
+    "District": "Suhum Kraboa Coaltar",
+    "Capital": "Suhum",
+    "Total_Population": 90358,
+    "Male": 43962,
+    "Female": 46396,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Sunyani",
+    "Capital": "Sunyani",
+    "Total_Population": 123224,
+    "Male": 61610,
+    "Female": 61614,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Tain",
+    "Capital": "Nsawkaw",
+    "Total_Population": 87994,
+    "Male": 43492,
+    "Female": 44502,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Talensi Nabdam",
+    "Capital": "Tongo",
+    "Total_Population": 81194,
+    "Male": 40831,
+    "Female": 40363,
+    "Region": "UPPER EAST"
+  },
+  {
+    "District": "Tamale",
+    "Capital": "Tamale",
+    "Total_Population": 223252,
+    "Male": 111109,
+    "Female": 112143,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Tano North",
+    "Capital": "Duayaw Nkwanta",
+    "Total_Population": 79973,
+    "Male": 39593,
+    "Female": 40380,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Tano South",
+    "Capital": "Becham",
+    "Total_Population": 78129,
+    "Male": 38299,
+    "Female": 39830,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Techiman",
+    "Capital": "Techiman",
+    "Total_Population": 147788,
+    "Male": 71732,
+    "Female": 76056,
+    "Region": "BRONG AHAFO"
+  },
+  {
+    "District": "Tema",
+    "Capital": "Tema",
+    "Total_Population": 292773,
+    "Male": 139958,
+    "Female": 152815,
+    "Region": "GREATER ACCRA"
+  },
+  {
+    "District": "Tolon-Kumbungu",
+    "Capital": "Tolon",
+    "Total_Population": 72990,
+    "Male": 36360,
+    "Female": 36630,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Upper Denkyira",
+    "Capital": "Dunkwa",
+    "Total_Population": 72810,
+    "Male": 35790,
+    "Female": 37020,
+    "Region": "CENTRAL"
+  },
+  {
+    "District": "Wa",
+    "Capital": "Wa",
+    "Total_Population": 107214,
+    "Male": 52996,
+    "Female": 54218,
+    "Region": "UPPER WEST"
+  },
+  {
+    "District": "Wa East",
+    "Capital": "Funsi",
+    "Total_Population": 72074,
+    "Male": 36396,
+    "Female": 35678,
+    "Region": "UPPER WEST"
+  },
+  {
+    "District": "Wa West",
+    "Capital": "Wechiau",
+    "Total_Population": 81348,
+    "Male": 40227,
+    "Female": 41121,
+    "Region": "UPPER WEST"
+  },
+  {
+    "District": "Wasa Amenfi East",
+    "Capital": "Wassa Akropong",
+    "Total_Population": 83478,
+    "Male": 42896,
+    "Female": 40582,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "Wasa Amenfi West",
+    "Capital": "Asankrangwa",
+    "Total_Population": 92152,
+    "Male": 47361,
+    "Female": 44791,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "Wassa West",
+    "Capital": "Daboase",
+    "Total_Population": 81073,
+    "Male": 40984,
+    "Female": 40089,
+    "Region": "WESTERN"
+  },
+  {
+    "District": "West Akim",
+    "Capital": "Asamankese",
+    "Total_Population": 108298,
+    "Male": 52208,
+    "Female": 56090,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "West Gonja",
+    "Capital": "Damongo",
+    "Total_Population": 41180,
+    "Male": 20681,
+    "Female": 20499,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "West Mamprusi",
+    "Capital": "Walewale",
+    "Total_Population": 121117,
+    "Male": 59566,
+    "Female": 61551,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Yendi",
+    "Capital": "Yendi",
+    "Total_Population": 117780,
+    "Male": 58920,
+    "Female": 58860,
+    "Region": "NORTHERN"
+  },
+  {
+    "District": "Yilo Krobo",
+    "Capital": "Somanya",
+    "Total_Population": 87847,
+    "Male": 42378,
+    "Female": 45469,
+    "Region": "EASTERN"
+  },
+  {
+    "District": "Zabzugu Tatale",
+    "Capital": "Zabzugu",
+    "Total_Population": 63815,
+    "Male": 31306,
+    "Female": 32509,
+    "Region": "NORTHERN"
+  }
+]

@@ -1,0 +1,49 @@
+/* select#select-map {
+    -webkit-appearance:caret;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-user-select: none;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    color: #555;
+    font-size: inherit;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}*/
+select#select-map {
+    border: 0 none;
+    color: black;
+    background: transparent;
+    font-size: 15px;
+    font-weight: bold;
+
+    width: 378px;
+    *width: 350px;
+    *background:#00ffff;
+    background-color:powderblue;
+    margin-right: 20px;
+}
+
+select#select-map {
+    overflow: hidden;
+    width: 250px;
+    height:30px;
+    background: url("arrow.gif") no-repeat scroll 319px 5px dodgerblue;
+}
+#select-map:hover {
+    background-color: powderblue;
+    cursor:pointer;
+}
+option#selection{
+    font-style:italic;
+
+}
+
+
+
+
+
+
