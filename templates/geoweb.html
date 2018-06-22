@@ -38,7 +38,7 @@
     <link href="//fonts.googleapis.com/css?family=Righteous&subset=latin-ext" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
     <!-- //font -->
-{#    <script src="../../static/app/scripts/jquery-3.2.1.min.js"></script>#}
+<!-- {#    <script src="../../static/app/scripts/jquery-3.2.1.min.js"></script>#} -->
     <script src="/scripts/jquery_3.3.1.js"></script>
     <!--<script src="../../static/app/scrits/jquery-1.11.1.min.js"></script>-->
     <script src="/scripts/jquery-ui.js"></script>
@@ -93,18 +93,16 @@
         <script src="/Data/Regional_population_final.js"></script>
         <script src="/Data/Regional_population_ethnicity_final.js"></script>
         <script src="/Data/Regional_population_by_nationality_final.js"></script>
-        <script src="p/Data/Regional_population_religious_belief_final.js"></script>
+        <script src="/Data/Regional_population_religious_belief_final.js"></script>
         <script type="text/javascript" src="/scripts/leaflet-search-geocoder.js"></script>
         <script type="text/javascript" src="/scripts/leaflet-search.js"></script>
         <script type="text/javascript" src="/scripts/mapbox.js"></script>
         <script type="text/javascript" src="/scripts/leaflet-geojson-selector.js"></script>
-{#        <script type="text/javascript" src="../../static/app/scripts/districtPopupTable.js"></script>#}
-
-{#        <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>#}
-{#        <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />#}
-
-        <!--<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
-        <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />-->
+        <!-- <script type="text/javascript" src="../../static/app/scripts/districtPopupTable.js"></script>-->
+        <!-- <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>-->
+        <!-- <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' /> -->
+        <!--<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>-->
+        <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
         
         
         
@@ -324,225 +322,16 @@
                                 <!-- Dropdown to show which regional data to select-->
 
                                 <!-- District data display with checkboxes-->
-                                <div class="data-group-dist" id="district-data">
-                                    <div class="container-data" id="container-district-pop-data">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Districts</span></div>
-                                        {% if District_data_checkbox %}
-                                            {% for data in District_data_checkbox %}
-                                                <label class="data-check-box-label"><input type="checkbox" name="filter" id="{{ data.District }}" value="{{ data.District }}"  tabindex="-1" class="data-check-box"/>{{ data.District }}</label>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </div>
-                                    <div class="container-data" id="container-district-pop-data-col">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Fields</span></div>
-                                        {% if tableHeader %}
-                                            {% for names in tableHeader%}
-                                        <label class="data-check-box-label"><input type="checkbox" id="Northern" value="{{ names }}"  tabindex="-1" class="{{ names }}" name="district-header"/>{{ names }}</label>
-                                            {%endfor%}
-                                        {%endif%}
-                                    </div>
-                                </div>
                                 
-                                <div class="data-group-dist-age-group" id="district-data-age-group">
-                                    <div class="container-data" id="container-district-pop-data-age">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Districts</span></div>
-                                        {% if district_data_agegroup_checkbox %}
-                                            {% for data in district_data_agegroup_checkbox %}
-                                                <label class="data-check-box-label"><input type="checkbox" name="agegroup" id="{{ data.Districts }}" value="{{ data.Districts }}"  tabindex="-1" class="data-check-box"/>{{ data.Districts }}</label>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </div>
-                                    <div class="container-data" id="container-district-pop-data-cols-age-group">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Fields</span></div>
-                                        
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="id" name="district-agroup-checkbox"/>No.</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="District" name="district-agroup-checkbox"/>District</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Total" name="district-agroup-checkbox"/>Total</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Male" name="district-agroup-checkbox"/>Male</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Female" name="district-agroup-checkbox"/>Female</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Ages_0_14_Total" name="district-agroup-checkbox"/>Ages 0-14 Total</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Ages_0_14_Male" name="district-agroup-checkbox"/>Ages 0-14 Male</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Ages_0_14_Female" name="district-agroup-checkbox"/>Ages 0-14 Female</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Ages_15_64_Total" name="district-agroup-checkbox"/>Ages 15-64 Total</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Ages_15_64_Male" name="district-agroup-checkbox"/>Ages 15-64 Male</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Ages_15_64_Female" name="district-agroup-checkbox"/>Ages 15-64 Female</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Ages_65_abv_Total" name="district-agroup-checkbox"/>Ages 65+ Total</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Ages_65_abv_Male" name="district-agroup-checkbox"/>Ages 65+ Male</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Ages_65_abv_Female" name="district-agroup-checkbox"/>Ages 64+ Female</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Region" name="district-agroup-checkbox"/>Region</label>
-                                    </div>
-                                </div>
-                                <!-- District data display with checkboxes-->
-
-                                <!-- Regional data display with checkboxes-->
-                                <div class="regional-data-selection" id="regional-data">
-                                    <div class="container-data" id="regional-data-regions">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Regions</span></div>
-                                        {% if regional_data_chekbox %}
-                                            {% for data in regional_data_chekbox %}
-                                                <label class="data-check-box-label"><input type="checkbox" name="regional" id="Northern" value="{{ data.Region }}"  tabindex="-1" class="data-check-box"/>{{ data.Region }}</label>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </div>
-                                    <div class="container-data" id="regional-data-columns">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Fields</span></div>
-                                        {% if regionalTableHeader %}
-                                            {% for names in regionalTableHeader%}
-                                        <label class="data-check-box-label"><input type="checkbox" id="{{ names }}" value="{{ names }}"  tabindex="-1" class="{{ names }}" name="regional-checkbox"/>{{ names }}</label>
-                                            {%endfor%}
-                                        {%endif%}
-                                    </div>
-                                </div>
-                                <!-- Regional data display with checkboxes-->
-                                
-                                <!-- Regional data display with checkboxes age group-->
-                                <div class="regional-data-selection" id="regional-data-age-group">
-                                    <div class="container-data" id="regional-data-regions-age-group">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Regions</span></div>
-                                        {% if regional_data_agegroup_chekbox %}
-                                            {% for data in regional_data_agegroup_chekbox %}
-                                                <label class="data-check-box-label"><input type="checkbox" name="regionalAgegroup" id="Northern" value="{{ data.Region }}"  tabindex="-1" class="data-check-box"/>{{ data.Region }}</label>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </div>
-                                    <div class="container-data" id="regional-data-age-group-columns">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Fields</span></div>
-                                        
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value="" class="id" tabindex="-1"  name="regional-agegroup-checkbox"/>No.</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value="" class="Region" tabindex="-1"  name="regional-agegroup-checkbox"/>Region</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value="" class="Capital" tabindex="-1"  name="regional-agegroup-checkbox"/>Capital</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value="" class="Total" tabindex="-1"  name="regional-agegroup-checkbox"/>Total</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value="" class="Male" tabindex="-1"  name="regional-agegroup-checkbox"/>Male</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value="" class="Female" tabindex="-1"  name="regional-agegroup-checkbox"/>Female</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value="" class="Ages_0_14" tabindex="-1"  name="regional-agegroup-checkbox"/>Age 0-14</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value="" class="Ages_15_64" tabindex="-1"  name="regional-agegroup-checkbox"/>Ages 15-64</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value="" class="Ages_65_abv" tabindex="-1"  name="regional-agegroup-checkbox"/>Ages 65+</label>
-
-                                    </div>
-                                </div>
-                                <!-- Regional data display with checkboxes age group-->
-                                
-                                <!-- Regional data display with checkboxes nationality-->
-                                <div class="regional-data-selection" id="regional-data-nationality">
-                                    <div class="container-data" id="regional-data-regions-nationality">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Regions</span></div>
-                                        {% if regional_data_nationality_chekbox %}
-                                            {% for data in regional_data_nationality_chekbox %}
-                                                <label class="data-check-box-label"><input type="checkbox" name="regionalNationality" id="Northern" value="{{ data.Region }}"  tabindex="-1" class="data-check-box"/>{{ data.Region }}</label>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </div>
-                                    <div class="container-data" id="regional-data-nationality-columns">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Fields</span></div>
-                                        
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="id" name="regional-nationality-checkbox"/>No.</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Region" name="regional-nationality-checkbox"/>Region</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Capital" name="regional-nationality-checkbox"/>Capital</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Total" name="regional-nationality-checkbox"/>Total</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_by_birth" name="regional-nationality-checkbox"/>% By Birth</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_by_naturalisation" name="regional-nationality-checkbox"/>% by Naturalisation</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_by_non_ghn" name="regional-nationality-checkbox"/>% Non-Ghanaian</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="By_Birth" name="regional-nationality-checkbox"/>Population By Birth</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="By_Naturalisation" name="regional-nationality-checkbox"/>Population By Naturalisation</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Non_Ghanaian" name="regional-nationality-checkbox"/>Population By Non-Ghanaian</label>     
-                                    </div>
-                                </div>
-                                <!-- Regional data display with checkboxes nationality-->
-                                
+                                    
                                 <!-- Regional data display with checkboxes religious-affiliation-->
-                                <div class="regional-data-selection" id="regional-data-religious-affiliation">
-                                    <div class="container-data" id="regional-data-regions-religious-affiliation">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Regions</span></div>
-                                        {% if regional_data_religious_affiliation_chekbox %}
-                                            {% for data in regional_data_religious_affiliation_chekbox %}
-                                                <label class="data-check-box-label"><input type="checkbox" name="regionalReligiousAfilliation" id="{{ data.Region }}" value="{{ data.Region }}"  tabindex="-1" class="data-check-box"/>{{ data.Region }}</label>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </div>
-                                    <div class="container-data" id="regional-data-religious-affiliation-columns">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Fields</span></div>
-                                        
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="id"                     name="regional-rel-aff-checkbox"/>No.</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Region"                 name="regional-rel-aff-checkbox"/>Region</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Total"                  name="regional-rel-aff-checkbox"/>Total</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_no_religion"        name="regional-rel-aff-checkbox"/>% No Religion</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_catholic"           name="regional-rel-aff-checkbox"/>% Catholic</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_protestine"         name="regional-rel-aff-checkbox"/>% Protestine</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_pent_or_charistmat" name="regional-rel-aff-checkbox"/>% Pentecostal or Charistmatic</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_other_christian"    name="regional-rel-aff-checkbox"/>% Other Christian</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_islam"              name="regional-rel-aff-checkbox"/>% Islam</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_traditionalist"     name="regional-rel-aff-checkbox"/>% Traditionalist</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_other"              name="regional-rel-aff-checkbox"/>% Other</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_no_religion"        name="regional-rel-aff-checkbox"/>No Religion</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_catholic"           name="regional-rel-aff-checkbox"/>Catholic</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_protestine"         name="regional-rel-aff-checkbox"/>Protestine</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_pent_or_charistmat" name="regional-rel-aff-checkbox"/>Pentecostal or Charistmatic</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_other_christian"    name="regional-rel-aff-checkbox"/>Other Christian</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_islam"              name="regional-rel-aff-checkbox"/>Islam</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_traditionalist"     name="regional-rel-aff-checkbox"/>Traditionalist</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_other"              name="regional-rel-aff-checkbox"/>Other</label>                                                             
-                                    </div>
-                                </div>
-                                <!-- Regional data display with checkboxes religious-affiliation-->
-                                
-                                <!-- Regional data display with checkboxes ethnicity-->
-                                <div class="regional-data-selection" id="regional-data-ethnicity">
-                                    <div class="container-data" id="regional-data-regions-ethnicity">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Regions</span></div>
-                                        {% if regional_data_ethnicity_chekbox %}
-                                            {% for data in regional_data_ethnicity_chekbox %}
-                                                <label class="data-check-box-label"><input type="checkbox" name="regionalEthnicity" id="{{ data.REGION }}" value="{{ data.REGION }}"  tabindex="-1" class="data-check-box"/>{{ data.REGION }}</label>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </div>
-                                    <div class="container-data" id="regional-data-ethnicity-columns">
-                                        <div class="container-inner"></div>
-                                        <div class="data-text"><span>Select Required Fields</span></div>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="id" name="regional-ethnicity-checkbox"/>No.</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Region" name="regional-ethnicity-checkbox"/>Region</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Capital" name="regional-ethnicity-checkbox"/>Capital</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="Total" name="regional-ethnicity-checkbox"/>Total</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_akan" name="regional-ethnicity-checkbox"/>% Akan</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_ga_dangme" name="regional-ethnicity-checkbox"/>% Ga-Dangme</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_ewe" name="regional-ethnicity-checkbox"/>% Ewe</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_guan" name="regional-ethnicity-checkbox"/>% Guan</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_gurma" name="regional-ethnicity-checkbox"/>% Gurma</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_mole_dagbani" name="regional-ethnicity-checkbox"/>% Mole Dagbani</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_grusi" name="regional-ethnicity-checkbox"/>% Grusi</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_mande" name="regional-ethnicity-checkbox"/>% Mande</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="per_other" name="regional-ethnicity-checkbox"/>% Other</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_akan" name="regional-ethnicity-checkbox"/>Akan</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_ga_dangme" name="regional-ethnicity-checkbox"/>Ga-Dangme</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_ewe" name="regional-ethnicity-checkbox"/>Ewe</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_guan" name="regional-ethnicity-checkbox"/>Guan</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_gurma" name="regional-ethnicity-checkbox"/>Gurma</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_mole_dagbani" name="regional-ethnicity-checkbox"/>Mole Dagbani</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_grusi" name="regional-ethnicity-checkbox"/>Grusi</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_mande" name="regional-ethnicity-checkbox"/>Mande</label>
-                                        <label class="data-check-box-label"><input type="checkbox" id="" value=""  tabindex="-1" class="pop_other" name="regional-ethnicity-checkbox"/>Other</label>
-                                    </div>
-                                </div>
-                                <!-- Regional data display with checkboxes religious-affiliation-->
-                                <button class="display-data" id="display-data">Display</button>
+                                <!--<button class="display-data" id="display-data">Display</button>
                                 <button class="display-data" id="display-data-distAgegroup">Display</button>
                                 <button class="display-data" id="display-data-regional">Display</button>
                                 <button class="display-data" id="display-data-regionalNat">Display</button>
                                 <button class="display-data" id="display-data-RegEthnicity">Display</button>
                                 <button class="display-data" id="display-data-RegRelAffiliation">Display</button>
-                                <button class="display-data" id="display-data-RegAgegroup">Display</button>
+                                <button class="display-data" id="display-data-RegAgegroup">Display</button>-->
                             </div>
 <!--
          <div class="form-group">
@@ -807,7 +596,7 @@
 
                     <!--Displaying chart container for each map feature-->
                     <!--Displaying chart container for each map feature-->
-{#                        <p>This is the main content. To display a lightbox click <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">here</a>#}
+<!-- {#                        <p>This is the main content. To display a lightbox click <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">here</a>#}
 {#                        </p>#}
 {#                        <div id="light" class="white_content">This is the lightbox content. <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>#}
 {##}
@@ -822,7 +611,7 @@
 {#                        </div>#}
 {#                        <div id="dark-background" class="black_overlay">#}
 {##}
-{#                        </div>#}
+{#                        </div>#} -->
                     <!--Displaying chart container for each map feature-->
                     <!--Displaying chart container for each map feature-->
 
@@ -868,41 +657,28 @@
 
                                 <table id="example" class="display" style="width:100%;" >
                                      <thead>
-                                         {%if tableHeader %}
                                          <tr>
-                                            {% for header in tableHeader %}
-                                                <th class="{{header}}">{{header}}</th>
-                                            {% endfor %}
+                                                <th class="Districts_th">District</th>
+                                                <th class="Districts_th">Capital</th>
+                                                <th class="Districts_th">Total Population</th>
+                                                <th class="Districts_th">Male</th>
+                                                <th class="Districts_th">Female</th>
+                                                <th class="Districts_th">Region</th>
                                          </tr>
-                                         {% endif %}
-                                         
                                      <tfoot>
-                                         {%if tableHeader %}
-                                         <tr>
-                                            {% for header in tableHeader %}
-                                                <th>{{header}}</th>
-                                            {% endfor %}
-                                         </tr>
-                                         {% endif %}
+                                        <tr>
+                                            <th class="Districts_th">District</th>
+                                            <th class="Districts_th">Capital</th>
+                                            <th class="Districts_th">Total Population</th>
+                                            <th class="Districts_th">Male</th>
+                                            <th class="Districts_th">Female</th>
+                                            <th class="Districts_th">Region</th>
+                                     </tr>
                                      </tfoot>
-                                     <tbody>
-                                         {% if districtData %}
-                                            {% for data in districtData %}
-                                                <tr>
-                                                    <td id="district-id">{{ data.id }}</td>
-                                                    <td>{{ data.District }}</td>
-                                                    <td>{{ data.Capital }}</td>
-                                                    <td>{{ data.Total_Population }}</td>
-                                                    <td>{{ data.Male }}</td>
-                                                    <td>{{ data.Female }}</td>
-                                                    <td>{{ data.Region }}</td>
-                                                </tr>
-                                            {% endfor %}
-                                         {% endif %}
-                                    </tbody>
+                                     
                                  </table>
                             </div>
-
+                           
                             <!--District data table by age group-->
                             <div class="my-tables" id="district-data-agegroup-table">
                                 <span class="table-title">District Population By Age Group</span>
@@ -923,8 +699,6 @@
                                      <thead>
                                          
                                          <tr>
-                                            
-                                             <th class="id">No.</th>
                                              <th class="District">District</th>
                                              <th class="Capital">Capital</th>
                                              <th class="Total">Total</th>
@@ -944,7 +718,6 @@
                                         
                                      <tfoot>
                                          <tr>
-                                             <th class="id">No.</th>
                                              <th class="District">District</th>
                                              <th class="Capital">Capital</th>
                                              <th class="Total">Total</th>
@@ -962,30 +735,7 @@
                                              <th class="Region">Region</th>
                                          </tr>
                                      </tfoot>
-                                     <tbody>
-                                         {% if district_data_by_agegroup %}
-                                            {% for data in district_data_by_agegroup %}
-                                                <tr>
-                                                    <td id="district-agegroup-id">{{ data.id }}</td>
-                                                    <td>{{ data.Districts }}</td>
-                                                    <td>{{ data.Capital }}</td>
-                                                    <td>{{ data.Total_Population }}</td>
-                                                    <td>{{ data.Male }}</td>
-                                                    <td>{{ data.Female }}</td>
-                                                    <td>{{ data.Ages_0_14_total }}</td>
-                                                    <td>{{ data.Ages_0_14_male }}</td>
-                                                    <td>{{ data.Ages_0_14_female }}</td>
-                                                    <td>{{ data.Ages_15_64_total }}</td>
-                                                    <td>{{ data.Ages_15_64_male }}</td>
-                                                    <td>{{ data.Ages_15_64_female }}</td>
-                                                    <td>{{ data.Ages_65_abv_total }}</td>
-                                                    <td>{{ data.Ages_65_abv_male }}</td>
-                                                    <td>{{ data.Ages_65_abv_female }}</td>
-                                                    <td>{{ data.Region }}</td>
-                                                </tr>
-                                            {% endfor %}
-                                         {% endif %}
-                                    </tbody>
+                                     
                                  </table>
                             </div>
 
@@ -1008,37 +758,20 @@
                                 
                                 <table id="regional-table" class="display" style="width:100%; " >
                                      <thead>
-                                         {%if regionalTableHeader %}
                                          <tr>
-                                            {% for header in regionalTableHeader %}
-                                                <th class="{{header}}">{{header}}</th>
-                                            {% endfor %}
+                                            <th class="reg-th">Region</th>
+                                            <th class="reg-th">Capital</th>
+                                            <th class="reg-th">Total</th>
+                                            <th class="reg-th">Male</th>
+                                            <th class="reg-th">Female</th>
                                          </tr>
-                                         {% endif %}
-                                         
                                      <tfoot>
-                                         {%if regionalTableHeader %}
-                                         <tr>
-                                            {% for header in regionalTableHeader %}
-                                                <th>{{header}}</th>
-                                            {% endfor %}
-                                         </tr>
-                                         {% endif %}
+                                        <th class="reg-th">Region</th>
+                                        <th class="reg-th">Capital</th>
+                                        <th class="reg-th">Total</th>
+                                        <th class="reg-th">Male</th>
+                                        <th class="reg-th">Female</th>
                                      </tfoot>
-                                     <tbody>
-                                         {% if regional_data %}
-                                            {% for data in regional_data %}
-                                                <tr>
-                                                    <td id="district-agegroup-id">{{ data.id }}</td>
-                                                    <td>{{ data.Region }}</td>
-                                                    <td>{{ data.Capital }}</td>
-                                                    <td>{{ data.Total }}</td>
-                                                    <td>{{ data.Male }}</td>
-                                                    <td>{{ data.Female }}</td>
-                                                </tr>
-                                            {% endfor %}
-                                         {% endif %}
-                                    </tbody>
                                  </table>
                             </div>
                             <!--Regional data table-->
@@ -1065,47 +798,28 @@
                                      <thead>
                                          <tr>
                                             
-                                             <th class="id">No.</th>
-                                             <th class="Region">Region</th>
-                                             <th class="Capital">Capital</th>
-                                             <th class="Total">Total</th>
-                                             <th class="Male">Male</th>
-                                             <th class="Female">Female</th>
-                                             <th class="Ages_0_14">Ages 0-14</th>
-                                             <th class="Ages_15_64">Ages 15-64</th>
-                                             <th class="Ages_65_abv">Ages 65+</th>
+                                            <th class="reg-th">Region</th>
+                                            <th class="reg-th">Capital</th>
+                                            <th class="reg-th">Total</th>
+                                            <th class="reg-th">Male</th>
+                                            <th class="reg-th">Female</th>
+                                            <th class="reg-th">Ages 0-14</th>
+                                            <th class="reg-th">Ages 15-60</th>
+                                            <th class="reg-th">Ages 65 above</th>
 
                                          </tr>
                                      <tfoot>
                                          <tr>
-                                             <th class="id">No.</th>
-                                             <th class="Region">Region</th>
-                                             <th class="Capital">Capital</th>
-                                             <th class="Total">Total</th>
-                                             <th class="Male">Male</th>
-                                             <th class="Female">Female</th>
-                                             <th class="Ages_0_14">Ages 0-14</th>
-                                             <th class="Ages_15_64">Ages 15-64</th>
-                                             <th class="Ages_65_abv">Ages 65+</th>
+                                            <th class="reg-th">Region</th>
+                                            <th class="reg-th">Capital</th>
+                                            <th class="reg-th">Total</th>
+                                            <th class="reg-th">Male</th>
+                                            <th class="reg-th">Female</th>
+                                            <th class="reg-th">Ages 0-14</th>
+                                            <th class="reg-th">Ages 15-60</th>
+                                            <th class="reg-th">Ages 65 above</th>
                                          </tr>
                                      </tfoot>
-                                     <tbody>
-                                         {% if regional_agegroup_data %}
-                                            {% for data in regional_agegroup_data %}
-                                                <tr>
-                                                    <td id="district-agegroup-id">{{ data.id }}</td>
-                                                    <td>{{ data.Region }}</td>
-                                                    <td>{{ data.Capital }}</td>
-                                                    <td>{{ data.Total }}</td>
-                                                    <td>{{ data.Male }}</td>
-                                                    <td>{{ data.Female }}</td>
-                                                    <td>{{ data.Ages_0_14 }}</td>
-                                                    <td>{{ data.Ages_15_60 }}</td>
-                                                    <td>{{ data.Ages_65_abv }}</td>
-                                                </tr>
-                                            {% endfor %}
-                                         {% endif %}
-                                    </tbody>
                                  </table>
                             </div>
                             <!--Regional data table by age group-->
@@ -1131,7 +845,6 @@
                                      <thead>
                                          
                                          <tr>
-                                             <th class="id">No.</th>
                                              <th class="Region">Region</th>
                                              <th class="Capital">Capital</th>
                                              <th class="Total">Total</th>
@@ -1142,42 +855,19 @@
                                              <th class="By_Naturalisation">Population By Naturalisation</th>
                                              <th class="Non_Ghanaian">Non Ghanaian</th>
                                          </tr>
-                                         
-                                         
                                      <tfoot>
-                                         
                                          <tr>
-                                             <th class="id">No.</th>
-                                             <th class="Region">Region</th>
-                                             <th class="Capital">Capital</th>
-                                             <th class="Total">Total</th>
-                                             <th class="per_by_birth">% By Birth</th>
-                                             <th class="per_by_naturalisation">% By Naturalisation</th>
-                                             <th class="per_by_non_ghn">% Non-Ghanaian</th>
-                                             <th class="By_Birth">Population By Birth</th>
-                                             <th class="By_Naturalisation">Population By Naturalisation</th>
-                                             <th class="Non_Ghanaian">Non Ghanaian</th>
+                                            <th class="Region">Region</th>
+                                            <th class="Capital">Capital</th>
+                                            <th class="Total">Total</th>
+                                            <th class="per_by_birth">% By Birth</th>
+                                            <th class="per_by_naturalisation">% By Naturalisation</th>
+                                            <th class="per_by_non_ghn">% Non-Ghanaian</th>
+                                            <th class="By_Birth">Population By Birth</th>
+                                            <th class="By_Naturalisation">Population By Naturalisation</th>
+                                            <th class="Non_Ghanaian">Non Ghanaian</th>
                                          </tr>
-                                         
                                      </tfoot>
-                                     <tbody>
-                                         {% if regional_nationality_data %}
-                                            {% for data in regional_nationality_data %}
-                                                <tr>
-                                                    <td id="district-agegroup-id">{{ data.id }}</td>
-                                                    <td>{{ data.Region }}</td>
-                                                    <td>{{ data.Capital }}</td>
-                                                    <td>{{ data.Total }}</td>
-                                                    <td>{{ data.by_birth }}</td>
-                                                    <td>{{ data.by_naturalisation }}</td>
-                                                    <td>{{ data.non_Ghanaian }}</td>
-                                                    <td>{{ data.by_birth_population }}</td>
-                                                    <td>{{ data.by_Naturalisation_population }}</td>
-                                                    <td>{{ data.Non_Ghanaian_population }}</td>
-                                                </tr>
-                                            {% endfor %}
-                                         {% endif %}
-                                    </tbody>
                                  </table>
                             </div>
                             <!--Regional data table by Nationality-->
@@ -1204,7 +894,6 @@
                                      <thead>
                                          
                                          <tr>
-                                             <th class="id">No.</th>
                                              <th class="Region">Region</th>
                                              <th class="Total">Total</th>
                                              <th class="per_no_religion">% No Religion</th>
@@ -1228,7 +917,6 @@
                                          
                                      <tfoot>
                                          <tr>
-                                             <th class="id">No.</th>
                                              <th class="Region">Region</th>
                                              <th class="Total">Total</th>
                                              <th class="per_no_religion">% No Religion</th>
@@ -1249,33 +937,7 @@
                                              <th class="pop_other">Other</th>
                                          </tr>
                                      </tfoot>
-                                     <tbody>
-                                         {% if regional_religious_affiliation_data %}
-                                            {% for data in regional_religious_affiliation_data %}
-                                                <tr>
-                                                    <td id="district-agegroup-id">{{ data.id }}</td>
-                                                    <td>{{ data.Region }}</td>
-                                                    <td>{{ data.Total }}</td>
-                                                    <td>{{ data.per_No_Religion }}</td>
-                                                    <td>{{ data.per_Catholic }}</td>
-                                                    <td>{{ data.per_Protestant }}</td>
-                                                    <td>{{ data.per_Pentecostal_Charismatic }}</td>
-                                                    <td>{{ data.per_Other_Christian }}</td>
-                                                    <td>{{ data.per_Islam }}</td>
-                                                    <td>{{ data.per_Traditionalist }}</td>
-                                                    <td>{{ data.per_Other }}</td>
-                                                    <td>{{ data.pop_No_Religion }}</td>
-                                                    <td>{{ data.pop_Catholic }}</td>
-                                                    <td>{{ data.pop_Protestant }}</td>
-                                                    <td>{{ data.pop_Pentecostal_Charismatic }}</td>
-                                                    <td>{{ data.pop_Other_Christian }}</td>
-                                                    <td>{{ data.pop_Islam }}</td>
-                                                    <td>{{ data.pop_Traditionalist }}</td>
-                                                    <td>{{ data.pop_Other }}</td>
-                                                </tr>
-                                            {% endfor %}
-                                         {% endif %}
-                                    </tbody>
+                                    
                                  </table>
                             </div>
                             <!--Regional data table by Religious Affiliation-->
@@ -1298,10 +960,9 @@
                                 </tbody></table>
                                 
                                 <table id="regional-ethnicity-table" class="display" style="width:100%;" >
-                                     <thead>
+                                    <thead>
                                          
                                          <tr>
-                                             <th class="id"               >No.</th>
                                              <th class="Region"           >Region</th>
                                              <th class="Capital"          >Capital</th>
                                              <th class="Total"            >Total</th>
@@ -1324,10 +985,10 @@
                                              <th class="pop_mande"        >Mande</th>
                                              <th class="pop_other"        >Other</th>  
                                          </tr>
+                                    </thead>
                                          
                                      <tfoot>
                                          <tr>
-                                             <th class="id"               >No.</th>
                                              <th class="Region"           >Region</th>
                                              <th class="Capital"          >Capital</th>
                                              <th class="Total"            >Total</th>
@@ -1351,69 +1012,11 @@
                                              <th class="pop_other"        >Other</th>  
                                          </tr>
                                      </tfoot>
-                                     <tbody>
-                                         {% if regional_ethnicity_data %}
-                                            {% for data in regional_ethnicity_data %}
-                                                <tr>
-                                                    <td id="district-agegroup-id">{{ data.id }}</td>
-                                                    <td>{{ data.REGION }}</td>
-                                                    <td>{{ data.Capital }}</td>
-                                                    <td>{{ data.Total }}</td>
-                                                    <td>{{ data.Akan }}</td>
-                                                    <td>{{ data.Ga_Dangme }}</td>
-                                                    <td>{{ data.Ewe }}</td>
-                                                    <td>{{ data.Guan }}</td>
-                                                    <td>{{ data.Gurma }}</td>
-                                                    <td>{{ data.Mole_Dagbani }}</td>
-                                                    <td>{{ data.Grusi }}</td>
-                                                    <td>{{ data.Mande }}</td>
-                                                    <td>{{ data.Other }}</td>
-                                                    <td>{{ data.Akan_population }}</td>
-                                                    <td>{{ data.Ga_Dangme_population }}</td>
-                                                    <td>{{ data.pop_Ewe }}</td>
-                                                    <td>{{ data.Guan_population }}</td>
-                                                    <td>{{ data.Gurma_population }}</td>
-                                                    <td>{{ data.Mole_Dagbani_population }}</td>
-                                                    <td>{{ data.Grusi_population }}</td>
-                                                    <td>{{ data.Mande_population }}</td>
-                                                    <td>{{ data.Other_population }}</td>
-                                                    
-                                                </tr>
-                                            {% endfor %}
-                                         {% endif %}
-                                    </tbody>
                                  </table>
                             </div>
                             <!--Regional data table by Ethnicity-->
                             <!--Regional data table by Ethnicity-->
-                        <!-- Empty dropdown for displaying map based on data selected-->
-                            <select class="form-control" data-width="auto" id="dynamicSelection" style="width: 140px">
-                            </select>
-
-                        <!-- Empty dropdown for population by age group-->
-                            <select class="form-control" data-width="auto" id="dynamicSelection_agegroup" style="width: 140px">
-                            </select>
-
-                            <!-- Empty dropdown for regional population -->
-                            <select class="form-control" data-width="auto" id="dynamicSelection_regional" style="width: 140px">
-                            </select>
-
-                            <!-- Empty dropdown for regional population by age group--->
-                            <select class="form-control" data-width="auto" id="dynamicSelection_regional_agegroup" style="width: 140px">
-                            </select>
-
-                            <!-- Empty dropdown for regional population by nationality-->
-                            <select class="form-control" data-width="auto" id="dynamicSelection_regional_nationality" style="width: 140px">
-                            </select>
-
-                            <!-- Empty dropdown for regional population by religious affiliation-->
-                            <select class="form-control" data-width="auto" id="dynamicSelection_regional_relAffiliation" style="width: 140px">
-                            </select>
-
-                            <!-- Empty dropdown for regional population by ethnicity-->
-                            <select class="form-control" data-width="auto" id="dynamicSelection_regional_ethnicity" style="width: 140px">
-                            </select>
-
+                           
                         </div>
                         <!-- End of charts canvas-->
 
@@ -1530,10 +1133,10 @@
         <script type="text/javascript" src="/scripts/displayRegionalNationalityColumns.js"></script>
         <script type="text/javascript" src="/scripts/displayRegionalRelAffiliationColumns.js"></script>
         <script type="text/javascript" src="/scripts/displayRegionalEthnicityColumns.js"></script>
-        <script type="text/javascript" src="/scripts/dynamically_display_regionalData.js"></script>
+        <!--<script type="text/javascript" src="/scripts/dynamically_display_regionalData.js"></script>-->
         <!--<script type="text/javascript" src="../../static/app/scripts/dynamic_map_display.js"></script>-->
-        <script type="text/javascript" src="/scripts/dynamically_display_districtData.js"></script>
-        <script type="text/javascript" src="/scripts/Leaflet_test_dynamic_map.js"></script>
+        <!--<script type="text/javascript" src="/scripts/dynamically_display_districtData.js"></script>-->
+        <!--<script type="text/javascript" src="/scripts/Leaflet_test_dynamic_map.js"></script>-->
         <script type="text/javascript" src="/scripts/advanced_search_district.js"></script>
         <script type="text/javascript" src="/scripts/adv_search_dist_agegroup.js"></script>
         <script type="text/javascript" src="/scripts/adv_search_reg_pop.js"></script>

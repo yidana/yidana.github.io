@@ -226,7 +226,7 @@ function highlight_nationality(e) {
             left: "648px",
             color: "#222",
         }
-    }).append("<p style='font-size: 16px; font-weight: bold; margin-bottom: 0px; line-height:1.15;'> Ghana Regional Population By Nationality" + "<br style='font-size:0px;'/>" + "<span style='font-size: 13px; margin-top:-20px;'>Region: " + layer.feature.properties.REGION + "<br style='font-size:0px;'/>" + "Capital: " + layer.feature.properties.Capital + "<br style='font-size::0px;'/>" + "Population: " + layer.feature.properties.pop_tot + " people" + "</span>" + "</p>");
+    }).append("<p style='font-size: 16px; font-weight: bold; margin-bottom: 0px; line-height:1.15;'> Ghana Regional Population" + "<br style='font-size:0px;'/>" + "<span style='font-size: 13px; margin-top:-20px;'>Region: " + layer.feature.properties.REGION + "<br style='font-size:0px;'/>" + "Capital: " + layer.feature.properties.Capital + "<br style='font-size::0px;'/>" + "Population: " + layer.feature.properties.pop_tot + " people" + "</span>" + "</p>");
     
     disp.appendTo("#mymap");
 }
@@ -262,7 +262,7 @@ function highlight_reg_regAffiliation(e) {
             left: "648px",
             color: "#222",
         }
-    }).append("<p style='font-size: 16px; font-weight: bold; margin-bottom: 0px; line-height:1.15;'> Ghana Regional Population By Rel. Aff." + "<br style='font-size:0px;'/>" + "<span style='font-size: 13px; margin-top:-20px;'>Region: " + layer.feature.properties.Regions + "<br style='font-size:0px;'/>" + "Capital: " + layer.feature.properties.Capital + "<br style='font-size::0px;'/>" + "Population: " + layer.feature.properties.pop_total + " people" + "</span>" + "</p>");
+    }).append("<p style='font-size: 16px; font-weight: bold; margin-bottom: 0px; line-height:1.15;'> Ghana Regional Population" + "<br style='font-size:0px;'/>" + "<span style='font-size: 13px; margin-top:-20px;'>Region: " + layer.feature.properties.Regions + "<br style='font-size:0px;'/>" + "Capital: " + layer.feature.properties.Capital + "<br style='font-size::0px;'/>" + "Population: " + layer.feature.properties.pop_total + " people" + "</span>" + "</p>");
     
     disp.appendTo("#mymap");
 }
@@ -535,11 +535,10 @@ geojson = L.geoJson(districts_layer_1, {
 
 // ************************************************************************************************
 // ************************************************************************************************
-// *******          Leaflet Selector          *****************************************************
+// *******          Leaflet Selector District Data          ***************************************
 
-function myGeoJSONSelector(layer){
     var geoList;
-    geoList = new L.Control.GeoJSONSelector(layer, {
+    geoList = new L.Control.GeoJSONSelector(geojson, {
         //zoomToLayer: true,
         activeListFromLayer: true,
         activeLayerFromList: true,
@@ -551,23 +550,9 @@ function myGeoJSONSelector(layer){
         activeStyle:{color: '#80dfff',background: 'blue'},
         selectStyle:{color: 'blue',opacity: '10'},
         multiple:false,
-        position:'bottomleft'
+        position:'topleft'
     });
-
-    // geoList.on('selector:change', function(e) {
-    //     var jsonObj = $.parseJSON( JSON.stringify(e.layers[0].feature.properties) );
-    //     var html = 'Selection:<br /><table border="1">';
-    //     $.each(jsonObj, function(key, value){
-    //             html += '<tr>';
-    //             html += '<td>' + key.replace(":", " ") + '</td>';
-    //             html += '<td>' + value + '</td>';
-    //             html += '</tr>';
-    //     });
-    //     html += '</table>';
-    //     $('.selection').html(html);
-    // });
-
-    map.addControl(geoList);
+    //map.addControl(geoList);
     	map.addControl(function() {
     		var c = new L.Control({position:'bottomright'});
     		c.onAdd = function(map) {
@@ -575,9 +560,6 @@ function myGeoJSONSelector(layer){
     			};
     		return c;
     	}());
-}
-
-
 
 // ************************************************************************************************
 // ************************************************************************************************
@@ -724,6 +706,37 @@ district_agegroup_json = L.geoJson(pop_agegroup_final,{
     style: densityStyle,
     onEachFeature: onEachFeature_agegroup
 });
+// *****************************************************************************************
+// *****************************************************************************************
+// ********Select GeoJson for district by age group*****************************************
+
+var geoList_distAgegroup;
+geoList_distAgegroup = new L.Control.GeoJSONSelector(district_agegroup_json, {
+        //zoomToLayer: true,
+        activeListFromLayer: true,
+        activeLayerFromList: true,
+        listOnlyVisibleLayers: false,
+        style:densityStyle,
+        collapse:true,
+        listLabel:'properties.District_C',
+        // zoomToLayer:true,
+        activeStyle:{color: '#80dfff',background: 'blue'},
+        selectStyle:{color: 'blue',opacity: '10'},
+        multiple:false,
+        position:'topleft'
+    });
+    //map.addControl(geoList);
+    	map.addControl(function() {
+    		var c = new L.Control({position:'bottomright'});
+    		c.onAdd = function(map) {
+    				return L.DomUtil.create('pre','selection');
+    			};
+    		return c;
+        }());
+        
+// ******************************************************************************************************
+// ******************************************************************************************************
+// ******************************************************************************************************
 
 
 // Deal with regional information
@@ -960,46 +973,37 @@ regional_geojson = L.geoJson(regional_pop_final,{
     onEachFeature:onEachFeature_region
 });
 
+// ********************************************************************************
+// ********************************************************************************
+// ************ GeoJson Selector for regional population **************************
 
-function myRegionalGeoJSONSelector(layer){
-    var geoList;
-    geoList = new L.Control.GeoJSONSelector(layer, {
+var geoList_regional;
+geoList_regional = new L.Control.GeoJSONSelector(regional_geojson, {
         //zoomToLayer: true,
         activeListFromLayer: true,
         activeLayerFromList: true,
         listOnlyVisibleLayers: false,
-        style:densityStyle,
-        collapse:true,
+        style:set_regional_style,
+        collapse:false,
         listLabel:'properties.REGION',
         // zoomToLayer:true,
         activeStyle:{color: '#80dfff',background: 'blue'},
         selectStyle:{color: 'blue',opacity: '10'},
         multiple:false,
-        position:'bottomleft'
+        position:'topleft'
     });
-
-    // geoList.on('selector:change', function(e) {
-    //     var jsonObj = $.parseJSON( JSON.stringify(e.layers[0].feature.properties) );
-    //     var html = 'Selection:<br /><table border="1">';
-    //     $.each(jsonObj, function(key, value){
-    //             html += '<tr>';
-    //             html += '<td>' + key.replace(":", " ") + '</td>';
-    //             html += '<td>' + value + '</td>';
-    //             html += '</tr>';
-    //     });
-    //     html += '</table>';
-    //     $('.selection').html(html);
-    // });
-
-    map.addControl(geoList);
+    //map.addControl(geoList);
     	map.addControl(function() {
     		var c = new L.Control({position:'bottomright'});
     		c.onAdd = function(map) {
     				return L.DomUtil.create('pre','selection');
     			};
     		return c;
-    	}());
-}
+        }());
+        
+// ******************************************************************************************************
+// ******************************************************************************************************
+// ******************************************************************************************************
 // End of regional
 
 // Regional population by nationality
@@ -1035,7 +1039,7 @@ function regional_nationality_resetHighlight(e) {
             left: "648px",
             color: "#222",
         }
-    }).append("<p style='font-size: 17px; font-weight: bold; margin-bottom: 0px; line-height:1.3;'> Ghana Regional Population" + "<br style='font-size:0px;'/>" + "<br />" + "<span style='font-size: 15px; margin-top:-20px; font-weight: bold;'>" + "Hover over a region" + "</span>" + "</p>");
+    }).append("<p style='font-size: 17px; font-weight: bold; margin-bottom: 0px; line-height:1.3;'> Ghana Regional Population By Nationality" + "<br style='font-size:0px;'/>" + "<br />" + "<span style='font-size: 15px; margin-top:-20px; font-weight: bold;'>" + "Hover over a region" + "</span>" + "</p>");
     disp.appendTo("#mymap");
 }
 
@@ -1242,6 +1246,38 @@ geojson_nationality = L.geoJson(regional_nationality, {
     onEachFeature:onEachFeature_region_nationality
     })
 
+// ********************************************************************************
+// ********************************************************************************
+// ************ GeoJson Selector for regional population **************************
+
+var geoList_regionalNationality;
+geoList_regionalNationality = new L.Control.GeoJSONSelector(geojson_nationality, {
+        //zoomToLayer: true,
+        activeListFromLayer: true,
+        activeLayerFromList: true,
+        listOnlyVisibleLayers: false,
+        style:set_regional_style_nationality,
+        collapse:true,
+        listLabel:'properties.REGION',
+        // zoomToLayer:true,
+        activeStyle:{color: '#80dfff',background: 'blue'},
+        selectStyle:{color: 'blue',opacity: '10'},
+        multiple:false,
+        position:'topleft'
+    });
+    //map.addControl(geoList);
+    	map.addControl(function() {
+    		var c = new L.Control({position:'bottomright'});
+    		c.onAdd = function(map) {
+    				return L.DomUtil.create('pre','selection');
+    			};
+    		return c;
+        }());
+        
+// ******************************************************************************************************
+// ******************************************************************************************************
+// ******************************************************************************************************
+
 //*********** Regional population by nationality *****************
 //*********** Regional population by nationality *****************
 //*********** Regional population by nationality *****************
@@ -1272,7 +1308,7 @@ function regional_ethnicity_resetHighlight(e) {
             left: "648px",
             color: "#222",
         }
-    }).append("<p style='font-size: 17px; font-weight: bold; margin-bottom: 0px; line-height:1.3;'> Ghana Regional Population By Nationality" + "<br style='font-size:0px;'/>" + "<br />" + "<span style='font-size: 15px; margin-top:-20px; font-weight: bold;'>" + "Hover over a region" + "</span>" + "</p>");
+    }).append("<p style='font-size: 17px; font-weight: bold; margin-bottom: 0px; line-height:1.3;'> Ghana Regional Population By Ethnicity" + "<br style='font-size:0px;'/>" + "<br />" + "<span style='font-size: 15px; margin-top:-20px; font-weight: bold;'>" + "Hover over a region" + "</span>" + "</p>");
     disp.appendTo("#mymap");
 }
 
@@ -1521,6 +1557,38 @@ geojson_ethnicity = L.geoJson(regional_ethnicity, {
     onEachFeature:onEachFeature_region_ethnicity
 
 })
+
+// ********************************************************************************
+// ********************************************************************************
+// ************ GeoJson Selector for regional population by ethnicity **************************
+
+var geoList_regionalEthnicity;
+geoList_regionalEthnicity = new L.Control.GeoJSONSelector(geojson_ethnicity, {
+        //zoomToLayer: true,
+        activeListFromLayer: true,
+        activeLayerFromList: true,
+        listOnlyVisibleLayers: false,
+        style:set_regional_style,
+        collapse:true,
+        listLabel:'properties.REGION',
+        // zoomToLayer:true,
+        activeStyle:{color: '#80dfff',background: 'blue'},
+        selectStyle:{color: 'blue',opacity: '10'},
+        multiple:false,
+        position:'topleft'
+    });
+    //map.addControl(geoList);
+    	map.addControl(function() {
+    		var c = new L.Control({position:'bottomright'});
+    		c.onAdd = function(map) {
+    				return L.DomUtil.create('pre','selection');
+    			};
+    		return c;
+        }());
+        
+// ******************************************************************************************************
+// ******************************************************************************************************
+// ******************************************************************************************************
 
 //*********** Regional population by ethnicity *****************
 //*********** Regional population by ethnicity *****************
@@ -1788,6 +1856,39 @@ geojson_religiousAffiliation = L.geoJson(regional_religious_affiliation, {
     onEachFeature: onEachFeature_region_religiousAffiliation
 })
 
+// ********************************************************************************
+// ********************************************************************************
+// ************ GeoJson Selector for regional population by religious affiliation **************************
+
+var geoList_regionalRelAffiliation;
+geoList_regionalRelAffiliation = new L.Control.GeoJSONSelector(geojson_religiousAffiliation, {
+        //zoomToLayer: true,
+        activeListFromLayer: true,
+        activeLayerFromList: true,
+        listOnlyVisibleLayers: false,
+        style:set_regional_style,
+        collapse:true,
+        listLabel:'properties.Regions',
+        // zoomToLayer:true,
+        activeStyle:{color: '#80dfff',background: 'blue'},
+        selectStyle:{color: 'blue',opacity: '10'},
+        multiple:false,
+        position:'topleft'
+    });
+    //map.addControl(geoList);
+    	map.addControl(function() {
+    		var c = new L.Control({position:'bottomright'});
+    		c.onAdd = function(map) {
+    				return L.DomUtil.create('pre','selection');
+    			};
+    		return c;
+        }());
+        
+// ******************************************************************************************************
+// ******************************************************************************************************
+// ******************************************************************************************************
+
+
 // **** Search control for district **** 
 // **** Search control for district ****
 // **** Search control for district ****
@@ -2025,6 +2126,12 @@ $(document).ready(function () {
     $("#Regional-panel").hide();
 
     //Add district search control
+    map.addControl(geoList)
+    map.removeControl(geoList_distAgegroup)
+    map.removeControl(geoList_regional)
+    map.removeControl(geoList_regionalEthnicity)
+    map.removeControl(geoList_regionalNationality)
+    map.removeControl(geoList_regionalRelAffiliation)
     map.addControl(searchControl);
     map.removeControl(searchControl_reg_pop);
     map.removeControl(searchControl_reg_pop_nationality);
@@ -2061,7 +2168,12 @@ $(document).ready(function () {
         $("#dist_leg_par").show();
         $("#reg_leg_par").hide();
         $("#Regional-panel").hide();
-        myGeoJSONSelector(geojson)
+        map.addControl(geoList);
+        map.removeControl(geoList_distAgegroup)
+        map.removeControl(geoList_regional)
+        map.removeControl(geoList_regionalEthnicity)
+        map.removeControl(geoList_regionalNationality)
+        map.removeControl(geoList_regionalRelAffiliation)
         //$("#styleMap").show();
 
 
@@ -2091,7 +2203,7 @@ $(document).ready(function () {
                   color: "#222",
 
               }
-          }).append("<h4 style='margin-bottom: 0px;font-weight: bold;'>Ghana District Population By Age</h4>" + "<br>" + "<p style='font-weight: bold; font-size: 15px; margin-top: 0px;'>hover over a district</p>");
+          }).append("<h4 style='margin-bottom: 0px;font-weight: bold;'>Ghana District Population By Age Group</h4>" + "<br>" + "<p style='font-weight: bold; font-size: 15px; margin-top: 0px;'>hover over a district</p>");
           disp.appendTo("#mymap");
         map.addLayer(district_agegroup_json);
         map.removeLayer(regional_geojson);
@@ -2102,7 +2214,7 @@ $(document).ready(function () {
         $("#dist_leg_par").show();
         $("#reg_leg_par").hide();
         $("#Regional-panel").hide();
-        myGeoJSONSelector(district_agegroup_json)
+        map.removeControl(geoList)
           //$("#styleMap").hide();
         //$("#collapseOne").fadeIn();
 
@@ -2113,6 +2225,12 @@ $(document).ready(function () {
         map.removeControl(searchControl_reg_pop_relAffiliation);
         map.removeControl(searchControl);
         map.removeControl(searchControl_reg_pop_ethnicity);
+        map.removeControl(geoList)
+        map.addControl(geoList_distAgegroup)
+        map.removeControl(geoList_regional)
+        map.removeControl(geoList_regionalEthnicity)
+        map.removeControl(geoList_regionalNationality)
+        map.removeControl(geoList_regionalRelAffiliation)
 
           
     }
@@ -2143,7 +2261,6 @@ $(document).ready(function () {
         $("#dist_leg_par").hide();
         $("#district-panel").hide();
         $("#reg_leg_par").show();
-        myRegionalGeoJSONSelector(regional_geojson)
           //$("#styleMap").hide();
 
         map.addControl(searchControl_reg_pop);
@@ -2152,6 +2269,13 @@ $(document).ready(function () {
         map.removeControl(searchControl_dist_agegroup);
         map.removeControl(searchControl);
         map.removeControl(searchControl_reg_pop_ethnicity);
+
+        map.removeControl(geoList)
+        map.removeControl(geoList_distAgegroup)
+        map.addControl(geoList_regional)
+        map.removeControl(geoList_regionalEthnicity)
+        map.removeControl(geoList_regionalNationality)
+        map.removeControl(geoList_regionalRelAffiliation)
         
 
       }
@@ -2192,6 +2316,12 @@ $(document).ready(function () {
           map.removeControl(searchControl_reg_pop);
           map.removeControl(searchControl_reg_pop_ethnicity);
 
+          map.removeControl(geoList)
+          map.removeControl(geoList_distAgegroup)
+          map.removeControl(geoList_regional)
+          map.removeControl(geoList_regionalEthnicity)
+          map.addControl(geoList_regionalNationality)
+          map.removeControl(geoList_regionalRelAffiliation)
           
       }
       else if (selected == "pop-regional-ethnicity") {
@@ -2231,7 +2361,12 @@ $(document).ready(function () {
           map.removeControl(searchControl_reg_pop_nationality);
           map.removeControl(searchControl_reg_pop_relAffiliation);
 
-          
+          map.removeControl(geoList)
+          map.removeControl(geoList_distAgegroup)
+          map.removeControl(geoList_regional)
+          map.addControl(geoList_regionalEthnicity)
+          map.removeControl(geoList_regionalNationality)
+          map.removeControl(geoList_regionalRelAffiliation)
           
       }
       else if (selected == "pop-regional-rel-affil") {
@@ -2250,7 +2385,7 @@ $(document).ready(function () {
                   left: "648px",
                   color: "#222",
               }
-          }).append("<p style='font-size: 17px; font-weight: bold; margin-bottom: 0px; line-height:1.3;'> Ghana Regional Population By Rel. Aff." + "<br style='font-size:0px;'/>" + "<br />" + "<span style='font-size: 15px; margin-top:-20px; font-weight: bold;'>" + "Hover over a region" + "</span>" + "</p>");
+          }).append("<p style='font-size: 17px; font-weight: bold; margin-bottom: 0px; line-height:1.3;'> Ghana Regional Population By Religious Affiliation" + "<br style='font-size:0px;'/>" + "<br />" + "<span style='font-size: 15px; margin-top:-20px; font-weight: bold;'>" + "Hover over a region" + "</span>" + "</p>");
           disp.appendTo("#mymap");
           map.addLayer(geojson_religiousAffiliation);
           map.removeLayer(district_agegroup_json);
@@ -2270,7 +2405,12 @@ $(document).ready(function () {
           map.removeControl(searchControl_reg_pop_nationality);
           map.removeControl(searchControl_reg_pop_ethnicity);
 
-          
+          map.removeControl(geoList)
+          map.removeControl(geoList_distAgegroup)
+          map.removeControl(geoList_regional)
+          map.removeControl(geoList_regionalEthnicity)
+          map.removeControl(geoList_regionalNationality)
+          map.addControl(geoList_regionalRelAffiliation)
       }
       else {
           var disp = $('<div></div>', {
@@ -2302,7 +2442,12 @@ $(document).ready(function () {
           $("#Regional-panel").hide();
           //$("#styleMap").show();
 
-          
+          map.addControl(geoList)
+          map.removeControl(geoList_distAgegroup)
+          map.removeControl(geoList_regional)
+          map.removeControl(geoList_regionalEthnicity)
+          map.removeControl(geoList_regionalNationality)
+          map.removeControl(geoList_regionalRelAffiliation)
       }
     });
  

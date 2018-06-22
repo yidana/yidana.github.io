@@ -1,4 +1,5 @@
-[
+{
+  "data":[
   {
     "Districts": "Abura-Asebu-Kwamankese",
     "Capital": "Abora Dunkwa",
@@ -3671,4 +3672,4 @@
     "Ages_65_+_female": 3857,
     "Region": "EASTERN"
   }
-]
+]}

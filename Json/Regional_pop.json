@@ -1,0 +1,77 @@
+{
+    "data":[
+    {
+       "Region": "Ashanti",
+       "Capital": "Kumasi",
+       "Total": 4780380,
+       "Male": 2316052,
+       "Female": 2464328
+       
+    },
+    {
+       "Region": "Brong Ahafo",
+       "Capital": "Sunyani",
+       "Total": 2310983,
+       "Male": 1145271,
+       "Female": 1165712
+      
+    },
+    {
+       "Region": "Central",
+       "Capital": "Cape Coast",
+       "Total": 2201863,
+       "Male": 1050112,
+       "Female": 1151751
+       
+    },
+    {
+       "Region": "Eastern",
+       "Capital": "Koforidua",
+       "Total": 2633154,
+       "Male": 1290539,
+       "Female": 1342615
+    },
+    {
+       "Region": "Greater Accra",
+       "Capital": "Accra",
+       "Total": 4010054,
+       "Male": 1938225,
+       "Female": 2071829
+    },
+    {
+       "Region": "Northern",
+       "Capital": "Tamale",
+       "Total": 2479461,
+       "Male": 1229887,
+       "Female": 1249574
+    },
+    {
+       "Region": "Upper East",
+       "Capital": "Bolgatanga",
+       "Total": 1046545,
+       "Male": 506405,
+       "Female": 540140
+    },
+    {
+       "Region": "Upper West",
+       "Capital": "Wa",
+       "Total": 702110,
+       "Male": 341182,
+       "Female": 360928
+    },
+    {
+       "Region": "Volta",
+       "Capital": "Ho",
+       "Total": 2118252,
+       "Male": 1019398,
+       "Female": 1098854
+    },
+    {
+       "Region": "Western",
+       "Capital": "Sekondi Takoradi",
+       "Total": 2376021,
+       "Male": 1187774,
+       "Female": 1188247
+    }
+ ]
+}

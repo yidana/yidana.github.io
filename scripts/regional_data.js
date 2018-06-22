@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#regional-table').DataTable({
+        "ajax":"/Json/Regional_pop.json",
         "columns": [
-            { "data": "No." },
             { "data": "Region" },
             { "data": "Capital" },
             { "data": "Total" },

@@ -1,0 +1,104 @@
+{
+    "data":[
+    {
+       "Region": "Ashanti",
+       "Capital": "Kumasi",
+       "Total": 4780380,
+       "Male": 2316052,
+       "Female": 2464328,
+       "Ages_0_14": 1803918,
+       "Ages_15_60": 2772001,
+       "Ages_65_abv": 204461
+    },
+    {
+       "Region": "Brong Ahafo",
+       "Capital": "Sunyani",
+       "Total": 2310983,
+       "Male": 1145271,
+       "Female": 1165712,
+       "Ages_0_14": 932691,
+       "Ages_15_60": 1274474,
+       "Ages_65_abv": 103818
+    },
+    {
+       "Region": "Central",
+       "Capital": "Cape Coast",
+       "Total": 2201863,
+       "Male": 1050112,
+       "Female": 1151751,
+       "Ages_0_14": 871834,
+       "Ages_15_60": 1213660,
+       "Ages_65_abv": 116369
+    },
+    {
+       "Region": "Eastern",
+       "Capital": "Koforidua",
+       "Total": 2633154,
+       "Male": 1290539,
+       "Female": 1342615,
+       "Ages_0_14": 1011054,
+       "Ages_15_60": 1471312,
+       "Ages_65_abv": 150788
+    },
+    {
+       "Region": "Greater Accra",
+       "Capital": "Accra",
+       "Total": 4010054,
+       "Male": 1938225,
+       "Female": 2071829,
+       "Ages_0_14": 1253632,
+       "Ages_15_60": 2614312,
+       "Ages_65_abv": 142110
+    },
+    {
+       "Region": "Northern",
+       "Capital": "Tamale",
+       "Total": 2479461,
+       "Male": 1229887,
+       "Female": 1249574,
+       "Ages_0_14": 1110613,
+       "Ages_15_60": 1260064,
+       "Ages_65_abv": 108784
+    },
+    {
+       "Region": "Upper East",
+       "Capital": "Bolgatanga",
+       "Total": 1046545,
+       "Male": 506405,
+       "Female": 540140,
+       "Ages_0_14": 434619,
+       "Ages_15_60": 540345,
+       "Ages_65_abv": 71581
+    },
+    {
+       "Region": "Upper West",
+       "Capital": "Wa",
+       "Total": 702110,
+       "Male": 341182,
+       "Female": 360928,
+       "Ages_0_14": 292698,
+       "Ages_15_60": 367065,
+       "Ages_65_abv": 42347
+    },
+    {
+       "Region": "Volta",
+       "Capital": "Ho",
+       "Total": 2118252,
+       "Male": 1019398,
+       "Female": 1098854,
+       "Ages_0_14": 812825,
+       "Ages_15_60": 1168070,
+       "Ages_65_abv": 137357
+    },
+    {
+       "Region": "Western",
+       "Capital": "Sekondi Takoradi",
+       "Total": 2376021,
+       "Male": 1187774,
+       "Female": 1188247,
+       "Ages_0_14": 926514,
+       "Ages_15_60": 1359590,
+       "Ages_65_abv": 89917
+    }
+ ]
+}

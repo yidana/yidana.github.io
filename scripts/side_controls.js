@@ -80,6 +80,13 @@ $(document).ready(function () {
         map.removeLayer(geojson_ethnicity);
         map.removeLayer(geojson_religiousAffiliation);
 
+        map.addControl(geoList)
+        map.removeControl(geoList_distAgegroup)
+        map.removeControl(geoList_regional)
+        map.removeControl(geoList_regionalEthnicity)
+        map.removeControl(geoList_regionalNationality)
+        map.removeControl(geoList_regionalRelAffiliation)
+
 
     });
     $("input[value=regional]").click(function () {
@@ -127,6 +134,13 @@ $(document).ready(function () {
         map.removeLayer(geojson_nationality);
         map.removeLayer(geojson_ethnicity);
         map.removeLayer(geojson_religiousAffiliation);
+
+        map.removeControl(geoList)
+        map.removeControl(geoList_distAgegroup)
+        map.addControl(geoList_regional)
+        map.removeControl(geoList_regionalEthnicity)
+        map.removeControl(geoList_regionalNationality)
+        map.removeControl(geoList_regionalRelAffiliation)
     })
 
     // District dropdowns
@@ -165,6 +179,13 @@ $(document).ready(function () {
             map.removeLayer(geojson_nationality);
             map.removeLayer(geojson_ethnicity);
             map.removeLayer(geojson_religiousAffiliation);
+
+            map.addControl(geoList)
+            map.removeControl(geoList_distAgegroup)
+            map.removeControl(geoList_regional)
+            map.removeControl(geoList_regionalEthnicity)
+            map.removeControl(geoList_regionalNationality)
+            map.removeControl(geoList_regionalRelAffiliation)
         }
         else if (selected == 'dist_pop_age_group') {
             $("#district-data-age-group").show()
@@ -201,6 +222,13 @@ $(document).ready(function () {
             map.removeLayer(geojson_nationality);
             map.removeLayer(geojson_ethnicity);
             map.removeLayer(geojson_religiousAffiliation);
+
+            map.removeControl(geoList)
+            map.addControl(geoList_distAgegroup)
+            map.removeControl(geoList_regional)
+            map.removeControl(geoList_regionalEthnicity)
+            map.removeControl(geoList_regionalNationality)
+            map.removeControl(geoList_regionalRelAffiliation)
         }
         else {
             $("#district-data-age-group").hide()
@@ -236,6 +264,13 @@ $(document).ready(function () {
             map.removeLayer(geojson_nationality);
             map.removeLayer(geojson_ethnicity);
             map.removeLayer(geojson_religiousAffiliation);
+
+            map.addControl(geoList)
+            map.removeControl(geoList_distAgegroup)
+            map.removeControl(geoList_regional)
+            map.removeControl(geoList_regionalEthnicity)
+            map.removeControl(geoList_regionalNationality)
+            map.removeControl(geoList_regionalRelAffiliation)
 
         }
     })
@@ -283,6 +318,13 @@ $(document).ready(function () {
             map.removeLayer(geojson_nationality);
             map.removeLayer(geojson_ethnicity);
             map.removeLayer(geojson_religiousAffiliation);
+
+            map.removeControl(geoList)
+            map.removeControl(geoList_distAgegroup)
+            map.addControl(geoList_regional)
+            map.removeControl(geoList_regionalEthnicity)
+            map.removeControl(geoList_regionalNationality)
+            map.removeControl(geoList_regionalRelAffiliation)
         }
         else if (selected == 'regional_pop_dpd_agegrp') {
             $("#regional-data").hide()
@@ -359,6 +401,13 @@ $(document).ready(function () {
             map.addLayer(geojson_nationality);
             map.removeLayer(geojson_ethnicity);
             map.removeLayer(geojson_religiousAffiliation);
+
+            map.removeControl(geoList)
+            map.removeControl(geoList_distAgegroup)
+            map.removeControl(geoList_regional)
+            map.removeControl(geoList_regionalEthnicity)
+            map.addControl(geoList_regionalNationality)
+            map.removeControl(geoList_regionalRelAffiliation)
         }
         else if (selected == 'regional_pop_dpd_rel_aff') {
             $("#regional-data").hide()
@@ -400,6 +449,13 @@ $(document).ready(function () {
             map.removeLayer(geojson_nationality);
             map.removeLayer(geojson_ethnicity);
             map.addLayer(geojson_religiousAffiliation);
+
+            map.removeControl(geoList)
+            map.removeControl(geoList_distAgegroup)
+            map.removeControl(geoList_regional)
+            map.removeControl(geoList_regionalEthnicity)
+            map.removeControl(geoList_regionalNationality)
+            map.addControl(geoList_regionalRelAffiliation)
         }
         else if (selected == 'regional_pop_dpd_ethnicity') {
             $("#regional-data").hide()
@@ -441,6 +497,13 @@ $(document).ready(function () {
             map.removeLayer(geojson_nationality);
             map.addLayer(geojson_ethnicity);
             map.removeLayer(geojson_religiousAffiliation);
+
+            map.removeControl(geoList)
+            map.removeControl(geoList_distAgegroup)
+            map.removeControl(geoList_regional)
+            map.addControl(geoList_regionalEthnicity)
+            map.removeControl(geoList_regionalNationality)
+            map.removeControl(geoList_regionalRelAffiliation)
         }
         else {
             $("#regional-data").hide()
@@ -482,6 +545,13 @@ $(document).ready(function () {
             map.removeLayer(geojson_nationality);
             map.removeLayer(geojson_ethnicity);
             map.removeLayer(geojson_religiousAffiliation);
+
+            map.removeControl(geoList)
+            map.removeControl(geoList_distAgegroup)
+            map.addControl(geoList_regional)
+            map.removeControl(geoList_regionalEthnicity)
+            map.removeControl(geoList_regionalNationality)
+            map.removeControl(geoList_regionalRelAffiliation)
         }
     })
 });

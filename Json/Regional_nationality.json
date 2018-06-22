@@ -1,0 +1,114 @@
+{
+    "data":[
+    {
+       "Region": "Ashanti",
+       "Capital": "Kumasi",
+       "Total": 4780380,
+       "by_birth": 97.2,
+       "by_naturalisation": 0.7,
+       "non_Ghanaian": 2.1,
+       "by_birth_population": 4646529,
+       "by_Naturalisation_population": 33462,
+       "Non_Ghanaian_population": 100387
+    },
+    {
+       "Region": "Brong Ahafo",
+       "Capital": "Sunyani",
+       "Total": 2310983,
+       "by_birth": 96.6,
+       "by_naturalisation": 0.8,
+       "non_Ghanaian": 2.6,
+       "by_birth_population": 2232409,
+       "by_Naturalisation_population": 18487,
+       "Non_Ghanaian_population": 60085
+    },
+    {
+       "Region": "Central",
+       "Capital": "Cape Coast",
+       "Total": 2201863,
+       "by_birth": 97,
+       "by_naturalisation": 0.6,
+       "non_Ghanaian": 2.4,
+       "by_birth_population": 2135807,
+       "by_Naturalisation_population": 13211,
+       "Non_Ghanaian_population": 52844
+    },
+    {
+       "Region": "Eastern",
+       "Capital": "Koforidua",
+       "Total": 2633154,
+       "by_birth": 97.6,
+       "by_naturalisation": 0.7,
+       "non_Ghanaian": 1.7,
+       "by_birth_population": 2569958,
+       "by_Naturalisation_population": 18432,
+       "Non_Ghanaian_population": 44763
+    },
+    {
+       "Region": "Greater Accra",
+       "Capital": "Accra",
+       "Total": 4010054,
+       "by_birth": 96,
+       "by_naturalisation": 1,
+       "non_Ghanaian": 3,
+       "by_birth_population": 3849651,
+       "by_Naturalisation_population": 40100,
+       "Non_Ghanaian_population": 120301
+    },
+    {
+       "Region": "Upper West",
+       "Capital": "Wa",
+       "Total": 702110,
+       "by_birth": 96.2,
+       "by_naturalisation": 0.9,
+       "non_Ghanaian": 2.9,
+       "by_birth_population": 675429,
+       "by_Naturalisation_population": 6318,
+       "Non_Ghanaian_population": 20361
+    },
+    {
+       "Region": "Upper East",
+       "Capital": "Bolgatanga",
+       "Total": 1046545,
+       "by_birth": 95.9,
+       "by_naturalisation": 1.1,
+       "non_Ghanaian": 2.9,
+       "by_birth_population": 1003636,
+       "by_Naturalisation_population": 11511,
+       "Non_Ghanaian_population": 30349
+    },
+    {
+       "Region": "Northern",
+       "Capital": "Tamale",
+       "Total": 2479461,
+       "by_birth": 96.4,
+       "by_naturalisation": 0.9,
+       "non_Ghanaian": 2.8,
+       "by_birth_population": 2390200,
+       "by_Naturalisation_population": 22315,
+       "Non_Ghanaian_population": 69424
+    },
+    {
+       "Region": "Volta",
+       "Capital": "Ho",
+       "Total": 2118252,
+       "by_birth": 94.8,
+       "by_naturalisation": 2.7,
+       "non_Ghanaian": 2.4,
+       "by_birth_population": 2008102,
+       "by_Naturalisation_population": 57192,
+       "Non_Ghanaian_population": 50838
+    },
+    {
+       "Region": "Western",
+       "Capital": "Sekondi Takoradi",
+       "Total": 2376021,
+       "by_birth": 97.4,
+       "by_naturalisation": 0.6,
+       "non_Ghanaian": 2,
+       "by_birth_population": 2314244,
+       "by_Naturalisation_population": 14256,
+       "Non_Ghanaian_population": 47520
+    }
+ ]
+}

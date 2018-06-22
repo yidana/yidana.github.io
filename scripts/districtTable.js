@@ -1,10 +1,11 @@
 $(document).ready(function () {
     $('#example').DataTable({
+        "ajax":"/Json/District_Population.json",
+            
         "columns": [
-            { "data": "No." },
             { "data": "District" },
-            { "data": "Capita" },
-            { "data": "Total" },
+            { "data": "Capital" },
+            { "data": "Total_Population" },
             { "data": "Male" },
             { "data": "Female" },
             { "data": "Region" },
