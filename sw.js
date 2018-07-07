@@ -88,7 +88,14 @@ var geoWebFiles = [
     '/scripts/adv_search_reg_age_group.js',
     '/scripts/adv_search_reg_ethnicity.js',
     '/scripts/adv_search_nationality.js',
-    '/scripts/adv_search_reg_rel_affiliation.js'
+    '/scripts/adv_search_reg_rel_affiliation.js',
+	'/Json/District_agegroup.json',
+    '/Json/District_Population.json',
+    '/Json/Regional_Agegroup.json',
+    '/Json/Regional_ethnicity.json',
+    '/Json/Regional_nationality.json',
+    '/Json/Regional_pop.json',
+    '/Json/Regional_relAffiliation.json'
 ];
 
 // var latestPath = '/pluralsight/courses/progressive-web-apps/service/latest-deals.php';
