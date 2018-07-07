@@ -1,296 +1,1200 @@
 ﻿
-<!--- replace .css with ../../static/app/content/   this brings or loads the css files from app/content-->
-<!--- Replace js with ../../static/app/scrips-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Ghana Statistical Service | Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Farming Company Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- bootstrap-css -->
-<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!--// bootstrap-css -->
-<!-- css -->
-<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
-<!--// css -->
-<!-- font-awesome icons -->
-<link href="/fonts/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome icons -->
-<!-- font -->
-<link href="//fonts.googleapis.com/css?family=Righteous&subset=latin-ext" rel="stylesheet">
-<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<!-- //font -->
-<script src="/scripts/jquery-1.11.1.min.js"></script>
-<script src="/scripts/bootstrap.js"></script>
-<script src="/scripts/SmoothScroll.min.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-    {% seo %}
-</head>
-<body>
-	<!-- header -->
-	<div class="header">
-		<div class="container">
-			<nav class="navbar navbar-default">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-					<div class="w3layouts-logo">
-						<h1><a href="index.html">Ghana Statistical <span>Service</span></a></h1>
-					</div>
-				</div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <title>GeoWeb Service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Farming Company Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="/css/font-awesome.css" rel="stylesheet"> 
+    <!-- //font-awesome icons -->
+    <!--style tabs-->
+    <link rel="stylesheet" href="/css/paneltabstyles.css" />
+    <link rel="stylesheet" href="/css/style_dropdowns.css" />
+    <link rel="stylesheet" href="/css/style_chart_popup.css" />
+    <link rel="stylesheet" href="/css/style_mapbox.css" />
+    <link rel="manifest" href="/manifest.json">
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-					<nav>
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="/templates/about.html" class="hvr-sweep-to-bottom">About</a></li>
-							<li><a href="/templates/geoweb.html" class="hvr-sweep-to-bottom">Geoweb Service</a></li>
-							<li><a href="#" class="hvr-sweep-to-bottom">Information</a>
-								
-							</li>
-							<li><a href="/templates/mail.html" class="hvr-sweep-to-bottom">Mail Us</a></li>
-						</ul>
-					</nav>
-				</div>
-				<!-- /.navbar-collapse -->
-			</nav>
-		</div>
-	</div>
-	<!-- //header -->
-	<!-- banner -->
-	<div class="banner">
-		<div class="container">
-			<section class="slider">
-					<div class="flexslider">
-						<ul class="slides">
-							<li>	
-								<div class="banner_text">
-									<h3>Welcome to our home page</h3>
-									<div class="w3ls-line"> </div>
-									<p>Ghana Statistical Service</p>
-									<div class="w3-button">
-										<a href="templates/single.html" class="btn btn-1 btn-1b">Read More</a>
-									</div>
-								</div>
-							</li>
-							<li>	
-								<div class="banner_text">
-									<div class="w3ls-line"> </div>
 
-								</div>
-							</li>
-						</ul>
-					</div>
-			</section>
-			<!-- flexSlider -->
-			<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-			<script defer src="/scripts/jquery.flexslider.js"></script>
-			<script type="text/javascript">
-				$(window).load(function(){
-					$('.flexslider').flexslider({
-						animation: "slide",
-						start: function(slider){
-						$('body').removeClass('loading');
-						}
-					});
-				});
-			</script>
-			<!-- //flexSlider -->
-		</div>
-	</div>
-	<!-- //banner -->
-	<!-- services -->
-	<!--<div class="services">
-		<div class="container">
-			<div class="services-main">
-				<div class="services-heading">
-					<h2>services</h2>
-					<div class="agileits-line"> </div>
-				</div>
-				<div class="services-bottom">
-					<div class="services-grid">
-						<div class="col-md-6 services-grid-left">
-							<div class="services-icon"><i class="fa fa-envira" aria-hidden="true"></i></div> 
-							<div class="services-text">
-								<h4>Nunc vitae temporg</h4>
-								<p>Pellentesque non nibh ante. Cras hendrerit finibus eros eget elementum.</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="col-md-6 services-grid-right">
-							<img src="images/3.jpg" alt="" />
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="services-grid">					
-						<div class="col-md-6 services-grid-right ulta-grid">
-							<img src="images/4.jpg" alt="" />
-						</div>
-						<div class="col-md-6 services-grid-left ulta-grid">
-							<div class="services-icon"><i class="fa fa-magnet" aria-hidden="true"></i></div> 
-							<div class="services-text">
-								<h4>Lorem Ipsum</h4>
-								<p>Pellentesque non nibh ante. Cras hendrerit finibus eros eget elementum.</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="services-grid">
-						<div class="col-md-6 services-grid-left">
-							<div class="services-icon"><i class="fa fa-cog" aria-hidden="true"></i></div> 
-							<div class="services-text">
-								<h4>Excepteur Sint</h4>
-								<p>Pellentesque non nibh ante. Cras hendrerit finibus eros eget elementum.</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="col-md-6 services-grid-right">
-							<img src="images/6.jpg" alt="" />
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>-->
-	<!--services -->
-	<!-- services-bottom -->
+    <!--Style comboboxes-->
+    <!--Other Scripts-->
 
-		<!--<div class="container">
-			<h4>Improve your Farming..!</h4>
-			<p>Pellentesque non nibh ante. Cras hendrerit finibus eros eget elementum. Maecenas sed ultrices dui. Fusce id feugiat arcu. Vivamus sodales mauris sagittis sem tincidunt, vel pretium orci viverra. Nunc pretium, eros id aliquam cursus, tellus nisi gravida sapien, et eleifend ipsum erat eget nisl.</p>
-		</div>
-	</div>-->
-	<!-- //services-bottom -->
-	<!-- blog -->
-	<!--<div class="blog">
-		<div class="container">
-			<div class="services-heading">
-				<h3>Our Blog</h3>
-				<div class="agileits-line"> </div>
-			</div>
-			<div class="agileinfo-blog-grids">
-				<div class="col-md-4 wthree-blog">
-					<div class="w3-agileits-blog">
-						<div class="w3-agileits-blog-img">
-							<a href="single.html"><img src="images/7.jpg" alt="" /></a>
-						</div>
-						<div class="w3-agileits-blog-text">
-							<a href="single.html">Fusce nec quam vulputate</a>
-							<p>Nunc vitae tempor dolor, sed euismod mauris. Vivamus ornare convallis tincidunt. Morbi orci leo, vulputate et aliquam nec, pulvinar sed nibh.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 wthree-blog">
-					<div class="w3-agileits-blog">
-						<div class="w3-agileits-blog-img">
-							<a href="single.html"><img src="images/8.jpg" alt="" /></a>
-						</div>
-						<div class="w3-agileits-blog-text">
-							<a href="single.html">Interdum et malesuada</a>
-							<p>Nunc vitae tempor dolor, sed euismod mauris. Vivamus ornare convallis tincidunt. Morbi orci leo, vulputate et aliquam nec, pulvinar sed nibh.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 wthree-blog">
-					<div class="w3-agileits-blog">
-						<div class="w3-agileits-blog-img">
-							<a href="single.html"><img src="images/9.jpg" alt="" /></a>
-						</div>
-						<div class="w3-agileits-blog-text">
-							<a href="single.html">Vivamus ornare convallis</a>
-							<p>Nunc vitae tempor dolor, sed euismod mauris. Vivamus ornare convallis tincidunt. Morbi orci leo, vulputate et aliquam nec, pulvinar sed nibh.</p>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
+    <link rel="stylesheet" href="/css/bootstrap-combobox.css" />
+    <link rel="stylesheet" href="/css/bootstrap-select.scss" />
+
+
+
+    <script src="/scripts/bootstrap-combobox.js"></script>
+    <script src="/scripts/bootstrap-select.js"></script>
+    <!-- font -->
+    <link href="//fonts.googleapis.com/css?family=Righteous&subset=latin-ext" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+    <!-- //font -->
+<!-- {#    <script src="../../static/app/scripts/jquery-3.2.1.min.js"></script>#} -->
+    <script src="/scripts/jquery_3.3.1.js"></script>
+    <!--<script src="../../static/app/scrits/jquery-1.11.1.min.js"></script>-->
+    <script src="/scripts/jquery-ui.js"></script>
+    <script src="/scripts/jquery-ui.min.js"></script>
+    <link href=" /css/jquery-ui.theme.css" rel="stylesheet"/>
+     <link href="/css/jquery-ui.css" rel="stylesheet"/>
+    <script src="/scripts/bootstrap.js"></script>
+    <script src="/scripts/SmoothScroll.min.js"></script>
+    <script src="/scripts/Control-map-popup-display.js"></script>
+
+    <!--DataTables-->
+        <script type="text/javascript" src="/scripts/datatables.js"></script>
+        <script type="text/javascript" src="/scripts/dataTables.buttons.js"></script>
+        <script type="text/javascript" src="/scripts/buttons.flash.js"></script>
+        <script type="text/javascript" src="/scripts/buttons.html5.js"></script>
+        <script type="text/javascript" src="/scripts/buttons.print.js"></script>
+        <script type="text/javascript" src="/scripts/pdfmake.js"></script>
+        <script type="text/javascript" src="/scripts/vfs_fonts.js"></script>
+        <script type="text/javascript" src="/scripts/jszip.js"></script>
+        <script type="text/javascript" src="/scripts/buttons.colVis.js"></script>
+        <script type="text/javascript" src="/scripts/dataTables.select.js"></script>
+        <link rel="stylesheet" href="/css/datatables.css" />
+        <link rel="stylesheet" href="/css/buttons.dataTables.css" />
+        <link rel="stylesheet" href="/css/buttons.bootstrap.css" />
+        <link rel="stylesheet" href="/css/select.bootstrap.css" />
+    <!--D3-->
+        <script src="/scripts/highcharts.js"></script>
+        <script src="/scripts/exporting.js"></script>
+        <script src="/scripts/export-data.js"></script>
+    <script src="/scripts/highcharts-more.js"></script>
+        <link rel="stylesheet" href="/css/highcharts.scss" />
+        <link rel="stylesheet" href="/css/highcharts.css" />
+    <!--D3-->
+    <!--Leaflet and map-->
+        
+        <!--<script type="text/javascript" src="../../static/app/scripts/choropleth.js"></script>-->
+        <link href="/css/legendStyle.css" rel="stylesheet">
+        <link href="/css/side_controls_style.css" rel="stylesheet"/>
+        <link href="/css/leaflet-search.css" rel="stylesheet">
+        <link href="/css/leaflet-search.mobile.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/leaflet.css">
+        <link rel="stylesheet" href="/css/leaflet-geojson-selector.css">
+
+        <script type="text/javascript" src="/scripts/leaflet.js"></script>
+        <script type="text/javascript" src="/scripts/leaflet-src.js"></script>
+        <script src="/Data/Districts_Layer_1.js"></script>
+        <!--<script src="../../static/app/Data/GHA_adm2(1).js"></script>-->
+        <!--<script src="../../static/app/Data/district_population_by_age_group.js"></script>-->
+        <script src="/Data/district_population_by_age_group_final.js"></script>
+        <script src="/Data/Regional_population_final.js"></script>
+        <script src="/Data/Regional_population_ethnicity_final.js"></script>
+        <script src="/Data/Regional_population_by_nationality_final.js"></script>
+        <script src="/Data/Regional_population_religious_belief_final.js"></script>
+        <script type="text/javascript" src="/scripts/leaflet-search-geocoder.js"></script>
+        <script type="text/javascript" src="/scripts/leaflet-search.js"></script>
+        <script type="text/javascript" src="/scripts/mapbox.js"></script>
+        <script type="text/javascript" src="/scripts/leaflet-geojson-selector.js"></script>
+        <!-- <script type="text/javascript" src="../../static/app/scripts/districtPopupTable.js"></script>-->
+        <!-- <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>-->
+        <!-- <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' /> -->
+        <!--<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>-->
+        <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+        
+        
+        
+        
+    
+
+    <script type="text/javascript">
+	    jQuery(document).ready(function($) {
+		    $(".scroll").click(function(event){		
+			    event.preventDefault();
+			    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		    });
+	    });
+    </script>
+
+    <!--Scrips for making tabs active-->
+    <script>
+        $(document).ready(function () {
+
+        
+            $("#query-tab").on({
+                hover: function () {
+
+                },
+
+                click: function () {
+                    $(this).css("background", "white");
+                    $("#analyze-tab").css("background", "lightblue");
+   
+                },
+            
+            
+
+            
+            });
+            //("#query-tab").hover(function () {
+            //    $(this).css("background", "white");
+            //    $("#query-tab").css("background", "#ddd");
+            //});
+            $("#analyze-tab").click(function () {
+                $(this).css("background", "white");
+                $("#query-tab").css("background", "lightblue");
+            
+            });
+
+        });
+    </script>
+ 
+    </head>
+    <body>
+       
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                .register('sw.js', {scope:''})
+                .then(function(swRegistration) { 
+                  
+                  var serviceWorker;
+              
+                  if(swRegistration.installing){
+                    console.log('Resolved at installing:  ', swRegistration);
+                    serviceWorker = swRegistration.installing;
+                  } else if (swRegistration.waiting){
+                    console.log('Resolved at installed/waiting: ', swRegistration);
+                    serviceWorker = swRegistration.waiting; 
+                  } else if (swRegistration.active){
+                    console.log('Resolved at activated: ', swRegistration);
+                    serviceWorker = swRegistration.active; 
+                  }
+              
+                  if (serviceWorker) {
+                    serviceWorker.addEventListener('statechange', function (e) {
+                        console.log(e.target.state);
+                    });
+                  }
+              
+                  swRegistration.addEventListener('updatefound', function(e){
+                    swRegistration.installing.addEventListener('statechange', function (e) {
+                        console.log("New service worker state: ", e.target.state);
+                    });
+                    console.log("New service worker found!", swRegistration)
+                  });
+              
+                  //Check for an update every hour
+                  setInterval(function(){
+                    swRegistration.update();
+                  },1000*60*60);
+              
+                }).catch(function(error) {
+                  console.log('Error occurred', error);
+                });
+                
+                //An extra event that is fired when the service worker controlling this page changes
+                //through the self.skipWaiting()
+                navigator.serviceWorker.addEventListener('controllerchange', function(e){
+                  console.log("Controller Changed!");
+                });
+              } 
+              
+        </script>
+	    <!-- header -->
+	    <div class="header">
+		    <div class="container">
+			    <nav class="navbar navbar-default">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					    <span class="sr-only">Toggle navigation</span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+				      </button>
+					    <div class="w3layouts-logo">
+						    <h1><a href="/index.html">GeoWeb Service<span>For Ghana Statistical Service</span></a></h1>
+					    </div>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					    <nav>
+                            <ul class="nav navbar-nav">
+                                <li><a href="/index.html" class="hvr-sweep-to-bottom">Home page</a></li>
+                                <li><a href="/templates/about.html" class="hvr-sweep-to-bottom">About</a></li>
+                                <li><a href="/templates/dowloadcenter.html" class="hvr-sweep-to-bottom">Download Center</a></li>
+                                <!--<li><a href="gallery.html" class="hvr-sweep-to-bottom">Gallery</a></li>-->
+                                <!--<li><a href="#" class=" hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Codes<span class="caret"></span></a>-->
+                                <!--{#<ul class="dropdown-menu">
+            <li><a class="hvr-sweep-to-bottom" href="icons.html">Icons</a></li>
+            <li><a class="hvr-sweep-to-bottom" href="typography.html">Typography</a></li>
+        </ul>
+    </li>#}-->
+                                <li><a href="/templates/mail.html" class="hvr-sweep-to-bottom">Mail Us</a></li>
+                            </ul>
+					    </nav>
+				    </div>
+				    <!-- /.navbar-collapse -->
+			    </nav>
+		    </div>
+	    </div>
+        <div id="text-description">
+            <h1 style="text-align:center; color:#3b5998; font-family:'Times New Roman', Times, serif">
+            Interactive Census Exploration
+            </h1><hr />
+            <p style="padding:4px; " id="mark">The purpose of this research is to establish a web service for managing national statistical data which unlike a website provides services to the user. The web service will display population data and the various statistical interpretations that have been applied to the data that would be of significance to the lay person. The web service will also help business executives, researchers and students make analyses with the data available.</p>
+
+        </div>
+        
+     <!-- /.row -->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" style="text-align:center">
+                                 Selection Pane
+                            
+                            </div>
+
+                            <!-- Tabs-->
+<div class="tab" >
+                                <button class="tab-links" id="query-tab" onclick="anaQuery(event,'querytools')" >Query</button>
+                                <!-- <button class="tablinks" onclick="openCity(event,'Paris')">Paris</button> -->
+                                <button class="tab-links" id="analyze-tab"  onclick="anaQuery(event,'analyzetools')">Analyze    </button>
+
+                           
+
+                                <div id="Query" class="tabcontent">
+
+                                    </div>
+                           
+                                <div id="Analyze" class="tabcontent">
+                            
+                                </div>
+                                <!-- Scripts-->
+                                <script>
+
+                                    function mapchart(myId) {
+
+                                        if (myId == "mymap") {
+                                            document.getElementById("mymap").style.display = "block";
+                                            document.getElementById("mychart").style.display = "none";
+                                            $("#select-map").show();
+                                        }
+                                        else {
+                                            document.getElementById("mymap").style.display = "none";
+                                            document.getElementById("mychart").style.display = "block";
+                                            $("#select-map").hide();
+                                        }
+
+                                    }
+
+                                    function openCity(evt, cityName) {
+                                        var i, tablinks, tabcontent;
+                                        tabcontent = document.getElementsByClassName("tabcontent");
+                                        for (i = 0; i < tabcontent.length; i++) {
+                                            tabcontent[i].style.display = "none";
+                                        }
+                                        tablinks = document.getElementsByClassName("tablinks");
+                                        for (i = 0; i < tablinks.length; i++) {
+                                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                        }
+                                        document.getElementById(cityName).style.display = "block";
+                                        evt.currentTarget.className += " active";
+                                    
+                                    }
+                                    document.getElementById("defaultOpen").click();
+                                </script>
+                            </div>
+
+                            </div>
+                        <div class="query" id="querytools" style="width:auto;background-color:azure;height:625px;border:2px solid">
+                            <div class="my-sidebar" id="my-sidebar">
+                                <!--Container for year and country-->
+                                <div class="my-container" id="container-year">
+                                    <div class="container-inner"></div>
+                                    <select id="selection-year" class="form-control">
+                                        <option value="">Year</option>
+                                        <option value="2000">2000</option>
+                                        <option value="2010">2010</option>
+                                    </select>
+                                    <select id="selection-country" class="form-control">
+                                        <option value="">Country</option>
+                                        <option value="Ghana">Ghana</option>
+                                    </select>
+                                </div>
+
+                                <!-- Radio buttons to switch district and regional dropdowns-->
+                                <!-- Radio buttons to switch district and regional dropdowns-->
+                                <!-- Radio buttons to switch district and regional dropdowns-->
+                                <div class="my-container" id="container-pop-radios">
+                                    <div class="container-inner"></div>
+                                    <form action="">
+                                      <input type="radio" name="admi" value="district"><label id="district-radio">District</label>
+                                      <input type="radio" name="admi" value="regional"><label id="regional-radio">Regional</label>
+                                    </form>
+                                </div>
+                                <!-- Radio buttons to switch district and regional dropdowns-->
+                                <!-- Radio buttons to switch district and regional dropdowns-->
+                                <!-- Radio buttons to switch district and regional dropdowns-->
+
+                                <!-- Dropdown to select which district data to select-->
+                                <!-- Dropdown to select which district data to select-->
+                                <div class="my-container" id="container-district-pop">
+                                    <div class="container-inner"></div>
+                                    <select id="selection-district-pop" class="form-control">
+                                        <option value="selection-district" selected>Select District Data</option>
+                                        <option value="dist_pop">District Population</option>
+                                        <option value="dist_pop_age_group">District Population By Age Group</option>
+                                    </select>
+                                </div>
+                                <!-- Dropdown to select which district data to select-->
+                                <!-- Dropdown to select which district data to select-->
+
+                                <!-- Dropdown to show which regional data to select-->
+                                <!-- Dropdown to show which regional data to select-->
+                                <div class="my-container" id="container-regional-pop">
+                                    <div class="container-inner"></div>
+                                    <select id="selection-regional-pop" class="form-control">
+                                        <option value="selection-regional" selected>Select Regional Data</option>
+                                        <option value="regional_pop_dpd">Regional Population</option>
+                                        <option value="regional_pop_dpd_agegrp">Regional Population By Age Group</option>
+                                        <option value="regional_pop_dpd_nationality">Regional Population By Nationality</option>
+                                        <option value="regional_pop_dpd_rel_aff">Regional Population By Religious Affiliation</option>
+                                        <option value="regional_pop_dpd_ethnicity">Regional Population By Ethnicity</option>
+                                    </select>
+                                </div>
+                                <!-- Dropdown to show which regional data to select-->
+                                <!-- Dropdown to show which regional data to select-->
+
+                                <!-- District data display with checkboxes-->
+                                
+                                    
+                                <!-- Regional data display with checkboxes religious-affiliation-->
+                                <!--<button class="display-data" id="display-data">Display</button>
+                                <button class="display-data" id="display-data-distAgegroup">Display</button>
+                                <button class="display-data" id="display-data-regional">Display</button>
+                                <button class="display-data" id="display-data-regionalNat">Display</button>
+                                <button class="display-data" id="display-data-RegEthnicity">Display</button>
+                                <button class="display-data" id="display-data-RegRelAffiliation">Display</button>
+                                <button class="display-data" id="display-data-RegAgegroup">Display</button>-->
+                            </div>
+<!--
+         <div class="form-group">
+            <label class="control-label">Year</label>
+            <div class="selectContainer">
+                <select class="form-control" name="year">
+                    <option value="year">Year</option>
+                    <option value="2000">2000</option>
+                    <option value="2010">2010</option>
+                
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Region</label>
+            <div class="selectContainer">
+                <select class="form-control" name="regions">
+                    <option value="">Region</option>
+                    <option value="Northern">Northern</option>
+                    <option value="Ashanti">Ashanti</option>
+                    <option value="Greater Accra">Greater Accra</option>
+                    <option value="Eastern">Eastern</option>
+                    <option value="Western">Western</option>
+                    <option value="Upper East">Upper East</option>
+                    <option value="Upper West">Upper West</option>
+                    <option value="Brong Ahafo">Brong Ahafo</option>
+                    <option value="volta">Volta</option>
+                    <option value="Central">Central</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Districts</label>
+            <div class="selectContainer">
+                <select class="form-control" name="districts ">
+                    <option value="">Districts</option>
+                    <option value="Northern">Northern</option>
+                    <option value="Ashanti">Ashanti</option>
+                    <option value="Greater Accra">Greater Accra</option>
+                    <option value="Eastern">Eastern</option>
+                    <option value="Western">Western</option>
+                    <option value="Upper East">Upper East</option>
+                    <option value="Upper West">Upper West</option>
+                    <option value="Brong Ahafo">Brong Ahafo</option>
+                    <option value="volta">Volta</option>
+                </select>
+            </div>
+        </div>
+       <div class="form-group">
+           <label class="control-label">Age Group</label>
+           <div class="selectContainer">
+               <select class="form-control" name="Agegroup">
+                   <option value="Agegroup">Age Group</option>
+                   <option value="0-5">0-5</option>
+               </select>
+           
+           </div>
+       </div>
     -->
-	<!-- //blog -->
-	<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="agileinfo_footer_grids">
-				<div class="col-md-4 agileinfo_footer_grid">
-					<div class="agile-logo">
-						<h4><a href="index.html">Ghana Statistical <span>Service</span></a></h4>
-					</div>
-					<p>Etiam condimentum mi nec tortor euismod, id lobortis odio dictum. Cras
-						suscipit elit eget mi volutpat facilisis.</p>
-					<div class="agileinfo-social-grids">
-						<ul>
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-rss"></i></a></li>
-							<li><a href="#"><i class="fa fa-vk"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 agileinfo_footer_grid">
-					<h3>Contact Info</h3>
-					<ul class="agileinfo_footer_grid_list">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
-					</ul>
-				</div>
-				<div class="col-md-4 agileinfo_footer_grid">
-					<h3>Navigation</h3>
-					<ul class="agileinfo_footer_grid_nav">
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="index.html">Home</a></li>
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="about.html">About Us</a></li>
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="gallery.html">Gallery</a></li>
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="typography.html">Typography</a></li>
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="icons.html">Icons</a></li>
-						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="mail.html">Mail Us</a></li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="w3agile_footer_copy">
-				<p>&copy; 2017 Farming Company. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-			</div>
-		</div>
-	</div>
-	<!-- //footer -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
-</body>	
-</html>
+
+       <script>
+               function anaQuery(evt, param) {
+                  // var i, tablinks;
+                   //tablinks = document.getElementsByClassName("tab-links");
+                   //for (i = 0; i < tablinks.length; i++) {
+                      // tablinks[i].className = tablinks[i].className.replace(" active", "");
+                   //}
+                   if (param == "querytools") {
+                       document.getElementById("querytools").style.display = "block"
+                       document.getElementById("analyzetools").style.display = "none";
+                       //$(".query").addClass("active");
+                       //$(".analyze").removeClass("active");
+                   }
+                   else {
+                       document.getElementById("querytools").style.display = "none"
+                       document.getElementById("analyzetools").style.display = "block"
+                       //$(".analyze").addClass("active");
+                       //$(".query").removeClass("active");
+                   }
+               
+                   //evt.currentTarget.className += " active";
+               }
+       </script>
+                        </div>
+
+                        <!-- Background to contain analyze tools-->
+                        <div class="analyze" id="analyzetools" style="background-color:beige;width:auto;height:600px;border:2px solid; display:none;" >
+                             <h4 style="color:blue;margin:3px">Choose analysis type</h4><br />
+                        
+                       
+                            <div class="options" id="options">
+                                <label class="select-option" style="color:darkblue;"><input type="radio" name="option1" value="options" />Select option</label>
+                                <script>
+                                    $(document).ready(function () {
+                                        $('input[type=checkbox]').each(function () {
+                                            this.checked = false;
+                                        });
+                                        $('input:radio[name=option1][value=options]').click();
+                                    });
+                                    </script>
+                            </div>
+                            <div class="analyze-radio-btn" id="comp-radio">
+                                     <label class="compare" id="compare-radio-btn" >
+                                         <input type="radio" name="option1" value="compare"/>Compare
+                                     </label> <br />
+                                </div>
+                            <!--Creating Dropdown buttons with checkboxes as dropdown items for regions_compare-->
+                                <div class="btn-group" id="compare-regions">
+                                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown-items" style="text-align:left">Regions      <span class="caret" style=""></span></button> 
+                                    <div class="dropdown-menu" id="list-items">
+                                        <label><input type="checkbox" id="Northern" value=""  tabindex="-1"/>Northern     </label><br />
+                                        <label><input type="checkbox" id="Ashanti" value="" tabindex="-1"/>Ashanti      </label><br />
+                                        <label><input type="checkbox" id="GreaterAccra" value="" tabindex="-1"/>Greater Accra</label><br />
+                                        <label><input type="checkbox" id="Eastern" value="" tabindex="-1"/>Eastern      </label><br />
+                                        <label><input type="checkbox" id="Western" value="" tabindex="-1"/>Western      </label><br />
+                                        <label><input type="checkbox" id="Upper West" value="" tabindex="-1"/>Upper West   </label><br />
+                                        <label><input type="checkbox" id="Upper East" value="" tabindex="-1"/>Upper East   </label><br />
+                                        <label><input type="checkbox" id="Brong Ahafo" value="" tabindex="-1"/>Brong Ahafo  </label><br />
+                                        <label><input type="checkbox" id="volta" value="" tabindex="-1"/>volta        </label><br />
+                                        <label><input type="checkbox" id="Central" value="" tabindex="-1" />Central      </label><br />
+                                    
+                                    </div>
+                                    <script>
+                                        $(document).ready(function () {
+
+                                        
+                                            $(".dropdown-menu").on({
+                                                click: function (e) {
+                                                    e.stopPropagation();
+                                                }
+
+                                            });
+                                            $(".select-option").on( {
+                                                click: function () {
+                                                    $("#compare-age-group").fadeOut();
+                                                    $("#compare-regions").fadeOut();
+                                                    $("#compare-districts").fadeOut();
+                                                }
+
+                                                });
+                                       
+                                            $(".describe").on({
+                                                click: function () {
+                                                    $("#compare-age-group").fadeOut();
+                                                    $("#compare-regions").fadeOut();
+                                                    $("#compare-districts").fadeOut();
+
+                                                }
+                                            });
+                                            $(".compare").on({
+                                                click: function () {
+                                                    $("#compare-age-group").fadeIn();
+                                                    $("#compare-regions").fadeIn();
+                                                    $("#compare-districts").fadeIn();
+                                                }
+                                            });
+                                        });
+                                    
+                                    </script>
+                                </div>
+                             <!-- Dropdown buttons with checkboxes as dropdown items-->
+
+                        
+
+                            <!--Creating Dropdown buttons with checkboxes as dropdown items for regions_compare-->
+                                <div class="btn-group" id="compare-districts">
+                                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown-items" style="text-align:left">Districts <span class="caret"></span></button> 
+                                    <div class="dropdown-menu" id="list-items">
+                                        <label><input type="checkbox" id="Northern" value=""  tabindex="-1"/>Northern     </label><br />
+                                        <label><input type="checkbox" id="Ashanti" value="" tabindex="-1"/>Ashanti      </label><br />
+                                        <label><input type="checkbox" id="GreaterAccra" value="" tabindex="-1"/>Greater Accra</label><br />
+                                        <label><input type="checkbox" id="Eastern" value="" tabindex="-1"/>Eastern      </label><br />
+                                        <label><input type="checkbox" id="Western" value="" tabindex="-1"/>Western      </label><br />
+                                        <label><input type="checkbox" id="Upper West" value="" tabindex="-1"/>Upper West   </label><br />
+                                        <label><input type="checkbox" id="Upper East" value="" tabindex="-1"/>Upper East   </label><br />
+                                        <label><input type="checkbox" id="Brong Ahafo" value="" tabindex="-1"/>Brong Ahafo  </label><br />
+                                        <label><input type="checkbox" id="volta" value="" tabindex="-1"/>volta        </label><br />
+                                        <label><input type="checkbox" id="Central" value="" tabindex="-1" />Central      </label><br />
+                                    
+                                    </div>
+                                
+                                </div>
+                             <!-- Dropdown buttons with checkboxes as dropdown items-->
+
+                        
+                            <!--Creating Dropdown buttons with checkboxes as dropdown items for regions_compare-->
+                                <div class="btn-group" id="compare-age-group">
+                                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown-items" style="text-align:left">Age Groups <span class="caret"></span></button> 
+                                    <div class="dropdown-menu" id="list-items">
+                                        <label><input type="checkbox" id="Northern" value=""  tabindex="-1"/>Northern     </label><br />
+                                        <label><input type="checkbox" id="Ashanti" value="" tabindex="-1"/>Ashanti      </label><br />
+                                        <label><input type="checkbox" id="GreaterAccra" value="" tabindex="-1"/>Greater Accra</label><br />
+                                        <label><input type="checkbox" id="Eastern" value="" tabindex="-1"/>Eastern      </label><br />
+                                        <label><input type="checkbox" id="Western" value="" tabindex="-1"/>Western      </label><br />
+                                        <label><input type="checkbox" id="Upper West" value="" tabindex="-1"/>Upper West   </label><br />
+                                        <label><input type="checkbox" id="Upper East" value="" tabindex="-1"/>Upper East   </label><br />
+                                        <label><input type="checkbox" id="Brong Ahafo" value="" tabindex="-1"/>Brong Ahafo  </label><br />
+                                        <label><input type="checkbox" id="volta" value="" tabindex="-1"/>volta        </label><br />
+                                        <label><input type="checkbox" id="Central" value="" tabindex="-1" />Central      </label><br />
+                                    
+                                    </div>
+                                
+                                </div>
+                             <!-- Dropdown buttons with checkboxes as dropdown items-->
+
+                                <!--Begining of compare radio button-->
+                                <div class="describe-radio">
+                                     <label class="describe" id="describe-radio-btn">
+                                         <input type="radio" name="option1" />Describe
+                                     </label>
+                                     </div>
+                            <!--End of compare radio button-->
+                                 </div>
+                         <!--End of Background to contain analyze tools-->
+                        
+                            <script>
+                                    //$(document).ready(function () {
+
+                                      //  $("#compare").prop("checked", true);
+                                      //  $("#describe").prop("checked", false);
+
+                                   // });
+                            </script>
+                        
+                        </div>
+                     <!--Starting map panel-->   
+                    <div class="col-sm-7">
+                        <div class="panel panel-info">
+                            <div class="panel-heading"style="text-align:center">
+                                 View Panel
+                            
+                            </div>
+                            <div class="panel-content">
+                                <div class="tab">
+                                    <button class="map-chart-class" id="map-tab" onclick="mapchart('mymap')" >Map</button>
+                                    <button class="map-chart-class" id="chart-tab" onclick="mapchart('mychart')">Data</button>
+                                    </div>
+                             </div>
+                            </div>
+                        
+                        <!--Position for map and map canvas-->
+                        <div class="map-options" style="float: left; margin-right: 80px;" >
+                            <select id="select-map" class="form-control">
+                              <option id="selection" value="selection">Select map to display</option>
+                              <option id="basic-district-info" value="basic-pop">Basic District Population</option>
+                              <option id="pop-age-group-dist" value="pop-age-group">District population by age group</option>
+                              <option id="regional-pop" value="pop-regional">Regional population</option>
+                              <option id="regional-pop-nationality" value="pop-rgional-nationality">Regional population by nationality</option>
+                              <option id="regional-pop-ethnicity" value="pop-regional-ethnicity">Regional population by ethnicity</option>
+                              <option id="regional-pop-reli-affil" value="pop-regional-rel-affil">Regional population by religious affiliation</option>
+                            </select>
+                        </div>
+                        <div class="map-options">
+                            <select class="form-control"  id="styleMap" style="width: 200px; padding: 2px 10px; margin-left: 10px; font-size: 15px;">
+                            </select>
+                        </div>
+                         <div class="" id="mymap" style="width:auto;height:600px;" >
+                             <!--https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap--> 
+                        </div>
+
+                    <!--Displaying chart container for each map feature-->
+                    <!--Displaying chart container for each map feature-->
+<!-- {#                        <p>This is the main content. To display a lightbox click <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">here</a>#}
+{#                        </p>#}
+{#                        <div id="light" class="white_content">This is the lightbox content. <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>#}
+{##}
+{#                        </div>#}
+{#                        <div id="fade" class="black_overlay">#}
+{##}
+{#                        </div>#}
+{##}
+{##}
+{#                        <div id="display-popup" class="popup-white-content">This is the lightbox content. <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>#}
+{##}
+{#                        </div>#}
+{#                        <div id="dark-background" class="black_overlay">#}
+{##}
+{#                        </div>#} -->
+                    <!--Displaying chart container for each map feature-->
+                    <!--Displaying chart container for each map feature-->
+
+                          
+                         
+                        <!--End of map and map canvas-->
+                    
+                        <!--Script for getting map-->
+                        <!--                    <script>
+                            function myMap() {
+                                 var mapProp= {
+                                  center:new google.maps.LatLng(5.55,-0.200),
+                             zoom:6,
+                                };
+                                    var map=new google.maps.Map(document.getElementById("mymap"),mapProp);
+                            }
+                        </script>
+
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmV0bPChHOIxkbVVlHyvtYzHa9kRXVJ80&callback=myMap">
+                        
+                        </script>
+                        -->
+
+                        <!--End of map scripts-->
+
+                        <!--Creating Charts canvas-->
+                        <div class="chart-canvas" id="mychart" style="background-color:aliceblue;width:auto;height:625px;display:none">
+                            <!--District Data-->
+                            <div class="my-tables" id="district-data-table">
+                                <span class="table-title">District Population</span>
+                                <script type="text/javascript" src="/scripts/districtTable.js"></script>
+
+                                <table border="0" cellspacing="5" cellpadding="5">
+                                    <tbody><tr>
+                                        <td>Minimum population:</td>
+                                        <td><input type="text" id="min" name="min"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maximum population:</td>
+                                        <td><input type="text" id="max" name="max"></td>
+                                    </tr>
+                                </tbody></table>
+
+                                <table id="example" class="display" style="width:100%;" >
+                                     <thead>
+                                         <tr>
+                                                <th class="Districts_th">District</th>
+                                                <th class="Districts_th">Capital</th>
+                                                <th class="Districts_th">Total Population</th>
+                                                <th class="Districts_th">Male</th>
+                                                <th class="Districts_th">Female</th>
+                                                <th class="Districts_th">Region</th>
+                                         </tr>
+                                     <tfoot>
+                                        <tr>
+                                            <th class="Districts_th">District</th>
+                                            <th class="Districts_th">Capital</th>
+                                            <th class="Districts_th">Total Population</th>
+                                            <th class="Districts_th">Male</th>
+                                            <th class="Districts_th">Female</th>
+                                            <th class="Districts_th">Region</th>
+                                     </tr>
+                                     </tfoot>
+                                     
+                                 </table>
+                            </div>
+                           
+                            <!--District data table by age group-->
+                            <div class="my-tables" id="district-data-agegroup-table">
+                                <span class="table-title">District Population By Age Group</span>
+                                <script type="text/javascript" src="/scripts/district_by_agegroup.js"></script>
+                                
+                                <table border="0" cellspacing="5" cellpadding="5">
+                                    <tbody><tr>
+                                        <td>Minimum population:</td>
+                                        <td><input type="text" id="min-dist-agegroup" name="min"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maximum population:</td>
+                                        <td><input type="text" id="max-dist-agegroup" name="max"></td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                <table id="district-agegroup-table" class="display" style="width:100%;" >
+                                     <thead>
+                                         
+                                         <tr>
+                                             <th class="District">District</th>
+                                             <th class="Capital">Capital</th>
+                                             <th class="Total">Total</th>
+                                             <th class="Male">Male</th>
+                                             <th class="Female">Female</th>
+                                             <th class="Ages_0_14_Total">Ages 0-14 Total</th>
+                                             <th class="Ages_0_14_Male">Ages 0-14 Male</th>
+                                             <th class="Ages_0_14_Female" >Ages 0-14 Female</th>
+                                             <th class="Ages_15_64_Total" >Ages 15-64 Total</th>
+                                             <th class="Ages_15_64_Male">Ages 15-64 Male</th>
+                                             <th class="Ages_15_64_Female">Ages 15-64 Female</th>
+                                             <th class="Ages_65_abv_Total">Ages 65+ Total</th>
+                                             <th class="Ages_65_abv_Male" >Ages 65+ Male</th>
+                                             <th class="Ages_65_abv_Female">Ages 65+ Female</th>
+                                             <th class="Region">Region</th>
+                                         </tr>
+                                        
+                                     <tfoot>
+                                         <tr>
+                                             <th class="District">District</th>
+                                             <th class="Capital">Capital</th>
+                                             <th class="Total">Total</th>
+                                             <th class="Male">Male</th>
+                                             <th class="Female">Female</th>
+                                             <th class="Ages_0_14_Total">Ages 0-14 Total</th>
+                                             <th class="Ages_0_14_Male">Ages 0-14 Male</th>
+                                             <th class="Ages_0_14_Female" >Ages 0-14 Female</th>
+                                             <th class="Ages_15_64_Total" >Ages 15-64 Total</th>
+                                             <th class="Ages_15_64_Male">Ages 15-64 Male</th>
+                                             <th class="Ages_15_64_Female">Ages 15-64 Female</th>
+                                             <th class="Ages_65_abv_Total">Ages 65+ Total</th>
+                                             <th class="Ages_65_abv_Male" >Ages 65+ Male</th>
+                                             <th class="Ages_65_abv_Female">Ages 65+ Female</th>
+                                             <th class="Region">Region</th>
+                                         </tr>
+                                     </tfoot>
+                                     
+                                 </table>
+                            </div>
+
+
+                            <!--Regional data table-->
+                            <div class="my-tables" id="regional-data-table">
+                                <span class="table-title">Regional Population</span>
+                                <script type="text/javascript" src="/scripts/regional_data.js"></script>
+                                
+                                <table border="0" cellspacing="5" cellpadding="5">
+                                    <tbody><tr>
+                                        <td>Minimum population:</td>
+                                        <td><input type="text" id="min-reg-pop" name="min"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maximum population:</td>
+                                        <td><input type="text" id="max-reg-pop" name="max"></td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                <table id="regional-table" class="display" style="width:100%; " >
+                                     <thead>
+                                         <tr>
+                                            <th class="reg-th">Region</th>
+                                            <th class="reg-th">Capital</th>
+                                            <th class="reg-th">Total</th>
+                                            <th class="reg-th">Male</th>
+                                            <th class="reg-th">Female</th>
+                                         </tr>
+                                     <tfoot>
+                                        <th class="reg-th">Region</th>
+                                        <th class="reg-th">Capital</th>
+                                        <th class="reg-th">Total</th>
+                                        <th class="reg-th">Male</th>
+                                        <th class="reg-th">Female</th>
+                                     </tfoot>
+                                 </table>
+                            </div>
+                            <!--Regional data table-->
+                            <!--Regional data table-->
+
+
+                            <!--Regional data table by age group-->
+                            <div class="my-tables" id="regional-data-agegroup-table">
+                                <span class="table-title">Regional Population By Age Group</span>
+                                <script type="text/javascript" src="/scripts/regional_agegroup_data.js"></script>
+                                
+                                <table border="0" cellspacing="5" cellpadding="5">
+                                    <tbody><tr>
+                                        <td>Minimum population:</td>
+                                        <td><input type="text" id="min-reg-agegroup" name="min"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maximum population:</td>
+                                        <td><input type="text" id="max-reg-agegroup" name="max"></td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                <table id="regional-agegroup-table" class="display" style="width:100%; " >
+                                     <thead>
+                                         <tr>
+                                            
+                                            <th class="reg-th">Region</th>
+                                            <th class="reg-th">Capital</th>
+                                            <th class="reg-th">Total</th>
+                                            <th class="reg-th">Male</th>
+                                            <th class="reg-th">Female</th>
+                                            <th class="reg-th">Ages 0-14</th>
+                                            <th class="reg-th">Ages 15-60</th>
+                                            <th class="reg-th">Ages 65 above</th>
+
+                                         </tr>
+                                     <tfoot>
+                                         <tr>
+                                            <th class="reg-th">Region</th>
+                                            <th class="reg-th">Capital</th>
+                                            <th class="reg-th">Total</th>
+                                            <th class="reg-th">Male</th>
+                                            <th class="reg-th">Female</th>
+                                            <th class="reg-th">Ages 0-14</th>
+                                            <th class="reg-th">Ages 15-60</th>
+                                            <th class="reg-th">Ages 65 above</th>
+                                         </tr>
+                                     </tfoot>
+                                 </table>
+                            </div>
+                            <!--Regional data table by age group-->
+                            <!--Regional data table by age group-->
+
+                            <!--Regional data table by Nationality-->
+                            <div class="my-tables" id="regional-data-nationality-table">
+                                <span class="table-title">Regional Population By Nationality</span>
+                                <script type="text/javascript" src="/scripts/regional_nationality_data.js"></script>
+                                
+                                <table border="0" cellspacing="5" cellpadding="5">
+                                    <tbody><tr>
+                                        <td>Minimum population:</td>
+                                        <td><input type="text" id="min-reg-nationality" name="min"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maximum population:</td>
+                                        <td><input type="text" id="max-reg-nationality" name="max"></td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                <table id="regional-nationality-table" class="display" style="width:100%;" >
+                                     <thead>
+                                         
+                                         <tr>
+                                             <th class="Region">Region</th>
+                                             <th class="Capital">Capital</th>
+                                             <th class="Total">Total</th>
+                                             <th class="per_by_birth">% By Birth</th>
+                                             <th class="per_by_naturalisation">% By Naturalisation</th>
+                                             <th class="per_by_non_ghn">% Non-Ghanaian</th>
+                                             <th class="By_Birth">Population By Birth</th>
+                                             <th class="By_Naturalisation">Population By Naturalisation</th>
+                                             <th class="Non_Ghanaian">Non Ghanaian</th>
+                                         </tr>
+                                     <tfoot>
+                                         <tr>
+                                            <th class="Region">Region</th>
+                                            <th class="Capital">Capital</th>
+                                            <th class="Total">Total</th>
+                                            <th class="per_by_birth">% By Birth</th>
+                                            <th class="per_by_naturalisation">% By Naturalisation</th>
+                                            <th class="per_by_non_ghn">% Non-Ghanaian</th>
+                                            <th class="By_Birth">Population By Birth</th>
+                                            <th class="By_Naturalisation">Population By Naturalisation</th>
+                                            <th class="Non_Ghanaian">Non Ghanaian</th>
+                                         </tr>
+                                     </tfoot>
+                                 </table>
+                            </div>
+                            <!--Regional data table by Nationality-->
+                            <!--Regional data table by Nationality-->
+
+
+                            <!--Regional data table by Religious Affiliation-->
+                            <div class="my-tables" id="regional-data-religiousAffiliation-table">
+                                <span class="table-title">Regional Population By Religious Affiliation</span>
+                                <script type="text/javascript" src="/scripts/regional_religious_affiliation_data.js"></script>
+                                
+                                <table border="0" cellspacing="5" cellpadding="5">
+                                    <tbody><tr>
+                                        <td>Minimum population:</td>
+                                        <td><input type="text" id="min-reg-relAffil" name="min"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maximum population:</td>
+                                        <td><input type="text" id="max-reg-relAffil" name="max"></td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                <table id="regional-religiousAffiliation-table" class="display" style="width:100%;" >
+                                     <thead>
+                                         
+                                         <tr>
+                                             <th class="Region">Region</th>
+                                             <th class="Total">Total</th>
+                                             <th class="per_no_religion">% No Religion</th>
+                                             <th class="per_catholic">% Catholic</th>
+                                             <th class="per_protestine">% Protestine</th>
+                                             <th class="per_pent_or_charistmat">% Pentecostal or Charistmatic</th>
+                                             <th class="per_other_christian">% Other Christian</th>
+                                             <th class="per_islam">% Islam</th>
+                                             <th class="per_traditionalist">% Traditionalist</th>
+                                             <th class="per_other">% Other</th>
+                                             <th class="pop_no_religion">No Religion</th>
+                                             <th class="pop_catholic">Catholic</th>
+                                             <th class="pop_protestine">Protestine</th>
+                                             <th class="pop_pent_or_charistmat">Pentecostal or Charistmatic</th>
+                                             <th class="pop_other_christian">Other Christian</th>
+                                             <th class="pop_islam">Islam</th>
+                                             <th class="pop_traditionalist">Traditionalist</th>
+                                             <th class="pop_other">Other</th>
+                                         </tr>
+                                         
+                                         
+                                     <tfoot>
+                                         <tr>
+                                             <th class="Region">Region</th>
+                                             <th class="Total">Total</th>
+                                             <th class="per_no_religion">% No Religion</th>
+                                             <th class="per_catholic">% Catholic</th>
+                                             <th class="per_protestine">% Protestine</th>
+                                             <th class="per_pent_or_charistmat">% Pentecostal or Charistmatic</th>
+                                             <th class="per_other_christian">% Other Christian</th>
+                                             <th class="per_islam">% Islam</th>
+                                             <th class="per_traditionalist">% Traditionalist</th>
+                                             <th class="per_other">% Other</th>
+                                             <th class="pop_no_religion">No Religion</th>
+                                             <th class="pop_catholic">Catholic</th>
+                                             <th class="pop_protestine">Protestine</th>
+                                             <th class="pop_pent_or_charistmat">Pentecostal or Charistmatic</th>
+                                             <th class="pop_other_christian">Other Christian</th>
+                                             <th class="pop_islam">Islam</th>
+                                             <th class="pop_traditionalist">Traditionalist</th>
+                                             <th class="pop_other">Other</th>
+                                         </tr>
+                                     </tfoot>
+                                    
+                                 </table>
+                            </div>
+                            <!--Regional data table by Religious Affiliation-->
+                            <!--Regional data table by Religious Affiliation-->
+
+                            <!--Regional data table by Ethnicity-->
+                            <div class="my-tables" id="regional-data-ethnicity-table">
+                                <span class="table-title">Regional Population By Ethnicity</span>
+                                <script type="text/javascript" src="/scripts/regional_ethnicity_data.js"></script>
+                                
+                                <table border="0" cellspacing="5" cellpadding="5">
+                                    <tbody><tr>
+                                        <td>Minimum population:</td>
+                                        <td><input type="text" id="min-reg-ethnicity" name="min"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maximum population:</td>
+                                        <td><input type="text" id="max-reg-ethnicity" name="max"></td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                <table id="regional-ethnicity-table" class="display" style="width:100%;" >
+                                    <thead>
+                                         
+                                         <tr>
+                                             <th class="Region"           >Region</th>
+                                             <th class="Capital"          >Capital</th>
+                                             <th class="Total"            >Total</th>
+                                             <th class="per_akan"         >% Akan</th>
+                                             <th class="per_ga_dangme"    >% Ga-Dangme</th>
+                                             <th class="per_ewe"          >% Ewe</th>
+                                             <th class="per_guan"         >% Guan</th>
+                                             <th class="per_gurma"        >% Gurma</th>
+                                             <th class="per_mole_dagbani" >% Mole Dagbani</th>
+                                             <th class="per_grusi"        >% Grusi</th>
+                                             <th class="per_mande"        >% Mande</th>
+                                             <th class="per_other"        >% Other</th>
+                                             <th class="pop_akan"         >Akan</th>
+                                             <th class="pop_ga_dangme"    >Ga-Dangme</th>
+                                             <th class="pop_ewe"          >Ewe</th>
+                                             <th class="pop_guan"         >Guan</th>
+                                             <th class="pop_gurma"        >Gurma</th>
+                                             <th class="pop_mole_dagbani" >Mole Dagbani</th>
+                                             <th class="pop_grusi"        >Grusi</th>
+                                             <th class="pop_mande"        >Mande</th>
+                                             <th class="pop_other"        >Other</th>  
+                                         </tr>
+                                    </thead>
+                                         
+                                     <tfoot>
+                                         <tr>
+                                             <th class="Region"           >Region</th>
+                                             <th class="Capital"          >Capital</th>
+                                             <th class="Total"            >Total</th>
+                                             <th class="per_akan"         >% Akan</th>
+                                             <th class="per_ga_dangme"    >% Ga-Dangme</th>
+                                             <th class="per_ewe"          >% Ewe</th>
+                                             <th class="per_guan"         >% Guan</th>
+                                             <th class="per_gurma"        >% Gurma</th>
+                                             <th class="per_mole_dagbani" >% Mole Dagbani</th>
+                                             <th class="per_grusi"        >% Grusi</th>
+                                             <th class="per_mande"        >% Mande</th>
+                                             <th class="per_other"        >% Other</th>
+                                             <th class="pop_akan"         >Akan</th>
+                                             <th class="pop_ga_dangme"    >Ga-Dangme</th>
+                                             <th class="pop_ewe"          >Ewe</th>
+                                             <th class="pop_guan"         >Guan</th>
+                                             <th class="pop_gurma"        >Gurma</th>
+                                             <th class="pop_mole_dagbani" >Mole Dagbani</th>
+                                             <th class="pop_grusi"        >Grusi</th>
+                                             <th class="pop_mande"        >Mande</th>
+                                             <th class="pop_other"        >Other</th>  
+                                         </tr>
+                                     </tfoot>
+                                 </table>
+                            </div>
+                            <!--Regional data table by Ethnicity-->
+                            <!--Regional data table by Ethnicity-->
+                           
+                        </div>
+                        <!-- End of charts canvas-->
+
+                        <!--Scripts for map chart active-->
+                        <script>
+                            $(document).ready(function () {
+                                $("#map-tab").click(function () {
+                                    $(this).css("background", "white");
+                                    $("#chart-tab").css("background", "lightblue");
+                                });
+                                $("#chart-tab").click(function () {
+                                    $(this).css("background", "white");
+                                    $("#map-tab").css("background", "lightblue");
+                                });
+                            
+                            })
+                        </script>
+                        <!--End of map-chart tab active script-->
+
+                        </div>
+                    <!--End of map panel--> 
+                
+        <!--Starting of Panel for displaying queried information-->
+                    <div class="col-sm-2">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" style="text-align:center">
+                                 Information Panel
+                            
+                            </div>
+                            <div class="panel-content" id="info-panel">
+                           
+                            </div>
+                            </div>
+                        <!-- Container for information-->
+                        <div class="info-panel" id="info-panel" style="background-color:azure;width:auto;height:625px;border:2px solid">
+                            <!--********************* Legends *****************************-->
+                             <!--********************* Legends *****************************-->
+                             <!--********************* Legends *****************************-->
+
+                            <div id="accordianmenu">
+                            	<p id="dist_leg_par">Legend</p>
+                            	<div id="district-panel" class="panel panel-warning">
+                                    
+                                 <!--********************* District Legends *****************************-->
+                                        <div class='my-legend'>
+                                                 <div class='legend-scale'>
+                                                     <ul class='legend-labels'>
+                                                       <li><span style='background:#FED976;'></span>60,000 - 79,000</li>
+                                                       <li><span style='background:#FEB24C;'></span>79,001 - 90,000</li>
+                                                       <li><span style='background:#FD8D3C;'></span>90,001 - 107,000</li>
+                                                       <li><span style='background:#FC4E2A;'></span>107,001 - 119,000</li>
+                                                       <li><span style='background:#E31A1C;'></span>119,001 - 143,000</li>
+                                                       <li><span style='background:#BD0026;'></span>143,001 - 1,730,000</li>
+                                                       <li><span style='background:#800026;'></span>1,730,001 +</li>
+                                                     </ul>
+                                                 </div>
+                                           </div>
+                                      </div>
+                            </div>
+                                <!--********************* District Legends *****************************-->
+
+                                <!--********************* Regional Legends *****************************-->
+
+                            <div id="regional-accordium">
+                            	<p id="reg_leg_par">Legend</p>
+                            	<div id="Regional-panel" class="panel panel-warning">
+                                    
+                                 <!--********************* District Legends *****************************-->
+                                        <div class='my-legend'>
+                                                 <div class='legend-scale'>
+                                                     <ul class='legend-labels'>
+                                                       <li><span style='background:#FD8D3C;'></span>1,903,000 - 2,268,000</li>
+                                                       <li><span style='background:#FC4E2A;'></span>2,268,001 - 2,418,000</li>
+                                                       <li><span style='background:#E31A1C;'></span>2,418,001 - 2,909,000</li>
+                                                       <li><span style='background:#BD0026;'></span>2,909,001 - 4,781,000</li>
+                                                       <li><span style='background:#800026;'></span>4,781,001 +</li>
+                                                     </ul>
+                                                 </div>
+                                           </div>
+                                      </div>
+                            </div>
+                                <!--********************* Regional Legends *****************************-->
+
+                                 <!--********************* Legends *****************************-->
+                                 <!--********************* Legends *****************************-->
+                                 <!--********************* Legends *****************************-->
+                             
+                        
+                            
+
+                            
+
+                        </div>
+                         <!-- Container for information-->
+                        </div>
+         <!--Starting of Panel for displaying queried information-->
+
+                    </div>
+       <!-- /.panel-heading -->
+        <!-- Script to load map-->
+        <script type="text/javascript" src="/scripts/load_map.js"></script>
+        <script type="text/javascript" src="/scripts/side_controls.js"></script>
+        <script type="text/javascript" src="/scripts/displayTables.js"></script>
+        <script type="text/javascript" src="/scripts/TableCheckboxDisplay.js"></script>
+        <script type="text/javascript" src="/scripts/TableCheckboxDistrictAgegroup.js"></script>
+        <script type="text/javascript" src="/scripts/TableCheckboxRegional.js"></script>
+        <script type="text/javascript" src="/scripts/TableCheckboxRegionalAgegroup.js"></script>
+        <script type="text/javascript" src="/scripts/TableCheckboxRegionalNationality.js"></script>
+        <script type="text/javascript" src="/scripts/TableCheckboxRegionalEthnicity.js"></script>
+        <script type="text/javascript" src="/scripts/TableCheckboxRegionalReligiousAfilliation.js"></script>
+        <script type="text/javascript" src="/scripts/displayDistrictAgroupColumns.js"></script>
+        <script type="text/javascript" src="/scripts/displayRegionalColumns.js"></script>
+        <script type="text/javascript" src="/scripts/displayRegionalAgegroupColumns.js"></script>
+        <script type="text/javascript" src="/scripts/displayRegionalNationalityColumns.js"></script>
+        <script type="text/javascript" src="/scripts/displayRegionalRelAffiliationColumns.js"></script>
+        <script type="text/javascript" src="/scripts/displayRegionalEthnicityColumns.js"></script>
+        <!--<script type="text/javascript" src="/scripts/dynamically_display_regionalData.js"></script>-->
+        <!--<script type="text/javascript" src="../../static/app/scripts/dynamic_map_display.js"></script>-->
+        <!--<script type="text/javascript" src="/scripts/dynamically_display_districtData.js"></script>-->
+        <!--<script type="text/javascript" src="/scripts/Leaflet_test_dynamic_map.js"></script>-->
+        <script type="text/javascript" src="/scripts/advanced_search_district.js"></script>
+        <script type="text/javascript" src="/scripts/adv_search_dist_agegroup.js"></script>
+        <script type="text/javascript" src="/scripts/adv_search_reg_pop.js"></script>
+        <script type="text/javascript" src="/scripts/adv_search_reg_age_group.js"></script>
+        <script type="text/javascript" src="/scripts/adv_search_reg_ethnicity.js"></script>
+        <script type="text/javascript" src="/scripts/adv_search_nationality.js"></script>
+        <script type="text/javascript" src="/scripts/adv_search_reg_rel_affiliation.js"></script>
+        <script type="text/javascript" src="/Assets/es6-promise-auto-min.js"></script>
+        <script type="text/javascript" src="/Assets/es6-promise-min.js"></script>
+
+        </body>
+    </html>
+
