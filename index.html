@@ -49,6 +49,10 @@
     <script src="/scripts/bootstrap.js"></script>
     <script src="/scripts/SmoothScroll.min.js"></script>
     <script src="/scripts/Control-map-popup-display.js"></script>
+        
+    <!--Material design Lite-->
+    <script src="/scripts/material.min.js"></script>
+    <link rel="stylesheet" href="/css/material.min.css">
 
     <!--DataTables-->
         <script type="text/javascript" src="/scripts/datatables.js"></script>
@@ -203,49 +207,23 @@
               
         </script>
 	    <!-- header -->
-	    <div class="header">
-		    <div class="container">
-			    <nav class="navbar navbar-default">
-				    <!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					    <span class="sr-only">Toggle navigation</span>
-					    <span class="icon-bar"></span>
-					    <span class="icon-bar"></span>
-					    <span class="icon-bar"></span>
-				      </button>
-					    <div class="w3layouts-logo">
-						    <h1><a href="/index.html">GeoWeb Service<span>For Ghana Statistical Service</span></a></h1>
-					    </div>
-				    </div>
-
-				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-					    <nav>
-                            <ul class="nav navbar-nav">
-                                <li><a href="/index.html" class="hvr-sweep-to-bottom">Home page</a></li>
-                                <li><a href="/templates/about.html" class="hvr-sweep-to-bottom">About</a></li>
-                                <li><a href="/templates/dowloadcenter.html" class="hvr-sweep-to-bottom">Download Center</a></li>
-                                <!--<li><a href="gallery.html" class="hvr-sweep-to-bottom">Gallery</a></li>-->
-                                <!--<li><a href="#" class=" hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Codes<span class="caret"></span></a>-->
-                                <!--{#<ul class="dropdown-menu">
-            <li><a class="hvr-sweep-to-bottom" href="icons.html">Icons</a></li>
-            <li><a class="hvr-sweep-to-bottom" href="typography.html">Typography</a></li>
-        </ul>
-    </li>#}-->
-                                <li><a href="/templates/mail.html" class="hvr-sweep-to-bottom">Mail Us</a></li>
-                            </ul>
-					    </nav>
-				    </div>
-				    <!-- /.navbar-collapse -->
-			    </nav>
-		    </div>
-	    </div>
-        <div id="text-description">
-            <h1 style="text-align:center; color:#3b5998; font-family:'Times New Roman', Times, serif">
-            Interactive Census Exploration
-            </h1><hr />
-            <p style="padding:4px; " id="mark">The purpose of this research is to establish a web service for managing national statistical data which unlike a website provides services to the user. The web service will display population data and the various statistical interpretations that have been applied to the data that would be of significance to the lay person. The web service will also help business executives, researchers and students make analyses with the data available.</p>
+	    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <!-- Header with refresh button-->
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">GeoWeb Service</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation">
+                        <button class="mdl-button--raised mdl-button--accent mdl-button mdl-js-button mdl-js-ripple-effect"
+                        onclick="location.reload()">
+                            Refresh
+                        </button>
+                    </nav>
+                </div>
+            </header>
+            <!--</div>-->
+        
+        <div id="some-space">
 
         </div>
         
@@ -1162,6 +1140,7 @@
                         </div>
          <!--Starting of Panel for displaying queried information-->
 
+                    </div>
                     </div>
        <!-- /.panel-heading -->
         <!-- Script to load map-->
