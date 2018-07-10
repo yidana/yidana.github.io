@@ -8,6 +8,9 @@ var geoWebFiles = [
     '/index.html',
     '/css/paneltabstyles.css',
     '/css/style_dropdowns.css', 
+    '/css/style.css',
+    '/scripts/material.min.js',
+    '/css/material.min.css',
     '/css/style_chart_popup.css',
     '/css/style_mapbox.css',
     '/css/bootstrap-combobox.css',
@@ -95,7 +98,9 @@ var geoWebFiles = [
     '/Json/Regional_ethnicity.json',
     '/Json/Regional_nationality.json',
     '/Json/Regional_pop.json',
-    '/Json/Regional_relAffiliation.json'
+    '/Json/Regional_relAffiliation.json',
+    
+    
 ];
 
 // var latestPath = '/pluralsight/courses/progressive-web-apps/service/latest-deals.php';
